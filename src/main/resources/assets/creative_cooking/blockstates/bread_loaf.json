@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "creative_cooking:block/bread_loaf"},
+    "facing=east": { "model": "creative_cooking:block/bread_loaf", "y": 90},
+    "facing=south": { "model": "creative_cooking:block/bread_loaf"},
+    "facing=west": { "model": "creative_cooking:block/bread_loaf", "y": 90 }
+  }
+}

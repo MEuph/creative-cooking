@@ -1,8 +1,8 @@
 package dev.chrismharris.creative_cooking.datagen.client;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.init.BlockInit;
-import dev.chrismharris.creative_cooking.init.ItemInit;
+import dev.chrismharris.creative_cooking.init.BlockRegister;
+import dev.chrismharris.creative_cooking.init.ItemRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
@@ -40,11 +40,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         // Block items
-        simpleBlockItem(BlockInit.EXAMPLE_BLOCK.get().asItem());
+        simpleBlockItem(BlockRegister.EXAMPLE_BLOCK.get().asItem());
 
         // Simple items
-        oneLayerItem(ItemInit.EXAMPLE_ITEM.get());
-        oneLayerItem(ItemInit.EXAMPLE_FUEL.get());
-        oneLayerItem(ItemInit.EXAMPLE_FOOD.get());
+        oneLayerItem(ItemRegister.EXAMPLE_ITEM.get());
+        oneLayerItem(ItemRegister.EXAMPLE_FUEL.get());
+        oneLayerItem(ItemRegister.EXAMPLE_FOOD.get());
     }
 }

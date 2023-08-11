@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+
+  "pattern": [
+    " S ",
+    "SSS",
+    "SSS"
+  ],
+
+  "key": {
+    "S": {
+      "item": "creative_cooking:bread_slice"
+    }
+  },
+
+  "result": {
+    "item": "creative_cooking:bread_loaf",
+    "count": 1
+  }
+}

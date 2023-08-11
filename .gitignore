@@ -1,7 +1,6 @@
-# The same as Create's gitignore: https://github.com/Creators-of-Create/Create/blob/mc1.18/dev/.gitignore 
+# Based on Create's gitignore: https://github.com/Creators-of-Create/Create/blob/mc1.18/dev/.gitignore
 
-## Based on GitHub's Eclipse .gitignore
-
+blockbench/
 run/
 .gradle/
 build/

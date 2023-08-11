@@ -1,9 +1,8 @@
 package dev.chrismharris.creative_cooking.datagen.server;
 
 import dev.chrismharris.creative_cooking.datagen.BaseLootTableProvider;
-import dev.chrismharris.creative_cooking.init.BlockInit;
+import dev.chrismharris.creative_cooking.init.BlockRegister;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
@@ -17,7 +16,7 @@ public class ModLootTableProvider extends BaseLootTableProvider {
 
     @Override
     protected void addTables() {
-        dropSelf(BlockInit.EXAMPLE_BLOCK.get());
+        dropSelf(BlockRegister.EXAMPLE_BLOCK.get());
     }
 
     protected void silkTouch(Block block, Item silk, int min, int max) {

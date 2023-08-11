@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking.datagen.client;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.init.BlockInit;
+import dev.chrismharris.creative_cooking.init.BlockRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -14,6 +14,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(BlockInit.EXAMPLE_BLOCK.get());
+        simpleBlock(BlockRegister.EXAMPLE_BLOCK.get());
     }
 }
