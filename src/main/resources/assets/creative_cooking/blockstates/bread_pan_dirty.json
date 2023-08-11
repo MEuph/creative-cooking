@@ -1,0 +1,8 @@
+{
+  "variants": {
+      "facing=north": { "model": "creative_cooking:block/bread_pan_dirty"},
+      "facing=east": { "model": "creative_cooking:block/bread_pan_dirty", "y": 90},
+      "facing=south": { "model": "creative_cooking:block/bread_pan_dirty"},
+      "facing=west": { "model": "creative_cooking:block/bread_pan_dirty", "y": 90 }
+  }
+}

@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking.datagen.client;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.init.BlockRegister;
+import dev.chrismharris.creative_cooking.register.BlockRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;

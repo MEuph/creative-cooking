@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking.datagen.server;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.init.BlockRegister;
+import dev.chrismharris.creative_cooking.register.BlockRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraftforge.common.Tags;

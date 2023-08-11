@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking;
 
-import dev.chrismharris.creative_cooking.init.BlockRegister;
-import dev.chrismharris.creative_cooking.init.ItemRegister;
+import dev.chrismharris.creative_cooking.register.BlockRegister;
+import dev.chrismharris.creative_cooking.register.ItemRegister;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,7 +23,7 @@ public class CreativeCookingMod
         @Override
         @OnlyIn(Dist.CLIENT)
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ItemRegister.EXAMPLE_ITEM.get());
+            return new ItemStack(ItemRegister.BREAD_SLICE.get());
         }
     };
     

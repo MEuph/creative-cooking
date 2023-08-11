@@ -1,4 +1,8 @@
 {
+  "block.creative_cooking.bread_pan_dirty": "Bread Pan (Dirty)",
+  "block.creative_cooking.bread_pan_dirty_filled": "Bread Pan (Baked Bread)",
+  "block.creative_cooking.bread_pan_raw": "Bread Pan (Raw Dough)",
+  "block.creative_cooking.bread_pan": "Bread Pan (Empty)",
   "block.creative_cooking.bread_loaf": "Loaf of Bread",
   "item.creative_cooking.bread_slice": "Slice of Bread",
   "block.creative_cooking.example_block": "Example Block",

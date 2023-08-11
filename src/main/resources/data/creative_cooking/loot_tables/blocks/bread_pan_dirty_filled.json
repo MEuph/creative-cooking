@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 2.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "creative_cooking:bread_pan_dirty"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "creative_cooking:bread_loaf"
+        }
+      ]
+    }
+  ]
+}
