@@ -1,0 +1,7 @@
+Java Launcher: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+Arguments: '--inJar, /home/charris/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.2.4/forge-1.18.2-40.2.4-injected.jar, --outJar, /home/charris/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.2.4_mapped_parchment_2022.11.06-1.18.2/forge-1.18.2-40.2.4_mapped_parchment_2022.11.06-1.18.2.jar, --logFile, accesstransform.log, --atFile, /home/charris/git/mc-mods/custom/creative-cooking/build/_atJar_4/parent_at.cfg'
+Classpath:
+ - /home/charris/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/8.0.7/accesstransformers-8.0.7-fatjar.jar
+Working directory: /home/charris/git/mc-mods/custom/creative-cooking/build/_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================

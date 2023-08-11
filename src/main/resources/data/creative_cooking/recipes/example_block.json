@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+
+  "pattern": [
+    "III",
+    "I I",
+    "III"
+  ],
+
+  "key": {
+    "I": {
+      "item": "creative_cooking:cool_item"
+    }
+  },
+
+  "result": {
+    "item": "creative_cooking:example_block",
+    "count": 1
+  }
+}
