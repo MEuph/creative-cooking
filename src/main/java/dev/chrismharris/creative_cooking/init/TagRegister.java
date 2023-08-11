@@ -4,12 +4,11 @@ import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.Tag;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-public final class TagInit {
+public final class TagRegister {
 
     public static final class Blocks {
         public static final TagKey<Block> COOL_BLOCKS = mod("cool_blocks");

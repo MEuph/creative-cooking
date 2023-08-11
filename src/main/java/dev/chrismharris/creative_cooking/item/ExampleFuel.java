@@ -13,10 +13,6 @@ import org.jetbrains.annotations.Nullable;
 public class ExampleFuel extends Item {
     public static final Properties PROPERTIES = new Properties().tab(CreativeCookingMod.CC_TAB);
 
-    private ExampleFuel(Properties properties) {
-        super(properties);
-    }
-
     public ExampleFuel() {
         super(ExampleFuel.PROPERTIES);
     }

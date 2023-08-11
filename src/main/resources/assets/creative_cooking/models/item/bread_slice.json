@@ -1,0 +1,85 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "creative_cooking:block/foods/bread_loaf_mid",
+		"2": "creative_cooking:block/foods/bread_loaf_top",
+		"3": "creative_cooking:block/foods/bread_loaf_base",
+		"particle": "creative_cooking:block/foods/bread_loaf_base"
+	},
+	"elements": [
+		{
+			"name": "bread_loaf_base",
+			"from": [5, 0, 7],
+			"to": [11, 4, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [7, 2, 10, 4], "texture": "#3"},
+				"east": {"uv": [7, 0, 14, 2], "texture": "#3"},
+				"south": {"uv": [7, 4, 10, 6], "texture": "#3"},
+				"west": {"uv": [0, 6, 7, 8], "texture": "#3"},
+				"up": {"uv": [7, 3, 0, 0], "rotation": 270, "texture": "#3"},
+				"down": {"uv": [7, 3, 0, 6], "rotation": 90, "texture": "#3"}
+			}
+		},
+		{
+			"name": "bread_loaf_mid",
+			"from": [4, 4, 7],
+			"to": [12, 6, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [7, 2, 11, 3], "texture": "#1"},
+				"east": {"uv": [7, 1, 14, 2], "texture": "#1"},
+				"south": {"uv": [7, 3, 11, 4], "texture": "#1"},
+				"west": {"uv": [7, 0, 14, 1], "texture": "#1"},
+				"up": {"uv": [7, 4, 0, 0], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [7, 4, 0, 8], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"name": "bread_loaf_top",
+			"from": [6, 6, 7],
+			"to": [10, 7, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 10, 4, 11], "texture": "#2"},
+				"east": {"uv": [0, 9, 14, 10], "texture": "#2"},
+				"south": {"uv": [4, 10, 8, 11], "texture": "#2"},
+				"west": {"uv": [0, 8, 14, 9], "texture": "#2"},
+				"up": {"uv": [14, 4, 0, 0], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [14, 4, 0, 8], "rotation": 90, "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [32, 84, 29],
+			"translation": [0.25, 2, 3]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [48, 80, 0],
+			"translation": [0, 2, 2.75]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 5.25, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, 5.75, 0]
+		},
+		"ground": {
+			"translation": [0, 4.25, 0]
+		},
+		"gui": {
+			"rotation": [16, 32, 0],
+			"translation": [0, 8, 0],
+			"scale": [1.91, 1.91, 1.91]
+		},
+		"head": {
+			"translation": [0, 10.75, -6]
+		},
+		"fixed": {
+			"translation": [0, 9, 1.5],
+			"scale": [2.02, 2.02, 2.02]
+		}
+	}
+}

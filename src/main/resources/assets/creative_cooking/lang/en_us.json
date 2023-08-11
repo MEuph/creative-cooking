@@ -1,4 +1,6 @@
 {
+  "block.creative_cooking.bread_loaf": "Loaf of Bread",
+  "item.creative_cooking.bread_slice": "Slice of Bread",
   "block.creative_cooking.example_block": "Example Block",
   "item.creative_cooking.example_item": "Example Item",
   "item.creative_cooking.example_fuel": "Example Fuel",

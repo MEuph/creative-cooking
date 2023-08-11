@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "creative_cooking:bread_loaf"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:bread_slice",
+      "count": 14
+    }
+  ]
+}

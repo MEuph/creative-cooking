@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking;
 
-import dev.chrismharris.creative_cooking.init.BlockInit;
-import dev.chrismharris.creative_cooking.init.ItemInit;
+import dev.chrismharris.creative_cooking.init.BlockRegister;
+import dev.chrismharris.creative_cooking.init.ItemRegister;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,15 +23,15 @@ public class CreativeCookingMod
         @Override
         @OnlyIn(Dist.CLIENT)
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
+            return new ItemStack(ItemRegister.EXAMPLE_ITEM.get());
         }
     };
-
+    
     public CreativeCookingMod() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ItemInit.ITEMS.register(bus);
-        BlockInit.BLOCKS.register(bus);
+        ItemRegister.ITEMS.register(bus);
+        BlockRegister.BLOCKS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

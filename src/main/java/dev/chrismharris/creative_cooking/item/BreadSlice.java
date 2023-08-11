@@ -5,22 +5,19 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.RecipeType;
-import org.jetbrains.annotations.Nullable;
 
-public class ExampleFood extends Item {
+public class BreadSlice extends Item {
     public static final Properties PROPERTIES = new Properties()
             .tab(CreativeCookingMod.CC_TAB)
             .food(new FoodProperties.Builder()
-                    .alwaysEat()
+                    .saturationMod(0.1f)
+                    .nutrition(1)
                     .fast()
-                    .effect(() -> new MobEffectInstance(MobEffects.BAD_OMEN, 200, 0), 1f)
                     .build()
             );
 
-    public ExampleFood() {
-        super(ExampleFood.PROPERTIES);
+    public BreadSlice() {
+        super(BreadSlice.PROPERTIES);
     }
 
 

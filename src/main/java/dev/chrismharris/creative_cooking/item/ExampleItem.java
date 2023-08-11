@@ -17,10 +17,6 @@ import java.util.List;
 public class ExampleItem extends Item {
     public static final Item.Properties PROPERTIES = new Item.Properties().tab(CreativeCookingMod.CC_TAB);
 
-    private ExampleItem(Properties properties) {
-        super(properties);
-    }
-
     public ExampleItem() {
         super(ExampleItem.PROPERTIES);
     }

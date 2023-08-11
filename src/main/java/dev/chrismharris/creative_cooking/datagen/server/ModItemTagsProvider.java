@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking.datagen.server;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.init.BlockInit;
+import dev.chrismharris.creative_cooking.init.BlockRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -17,6 +17,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
-        tag(Tags.Items.COBBLESTONE).add(BlockInit.EXAMPLE_BLOCK.get().asItem());
+        tag(Tags.Items.COBBLESTONE).add(BlockRegister.EXAMPLE_BLOCK.get().asItem());
     }
 }
