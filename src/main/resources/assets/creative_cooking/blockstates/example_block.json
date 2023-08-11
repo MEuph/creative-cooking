@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "creative_cooking:block/example_block"
+    }
+  }
+}
