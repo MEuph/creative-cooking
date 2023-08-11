@@ -1,4 +1,4 @@
-package dev.chrismharris.creative_cooking.init;
+package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import net.minecraft.resources.ResourceLocation;

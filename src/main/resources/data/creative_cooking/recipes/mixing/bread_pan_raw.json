@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create:dough"
+    },
+    {
+      "item": "creative_cooking:bread_pan"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:bread_pan_raw",
+      "count": 1
+    }
+  ]
+}

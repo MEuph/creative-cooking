@@ -1,8 +1,7 @@
-package dev.chrismharris.creative_cooking.init;
+package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.block.BreadLoaf;
-import dev.chrismharris.creative_cooking.block.ExampleBlock;
+import dev.chrismharris.creative_cooking.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -28,6 +27,30 @@ public class BlockRegister {
             "bread_loaf",
             BreadLoaf::new,
             object -> () -> new BlockItem(object.get(), BreadLoaf.ITEM_PROPERTIES)
+    );
+
+    public static final RegistryObject<Block> BREAD_PAN = register(
+            "bread_pan",
+            BreadPan::new,
+            object -> () -> new BlockItem(object.get(), BreadPan.ITEM_PROPERTIES)
+    );
+
+    public static final RegistryObject<Block> BREAD_PAN_RAW = register(
+            "bread_pan_raw",
+            BreadPanRaw::new,
+            object -> () -> new BlockItem(object.get(), BreadPanRaw.ITEM_PROPERTIES)
+    );
+
+    public static final RegistryObject<Block> BREAD_PAN_DIRTY = register(
+            "bread_pan_dirty",
+            BreadPanDirty::new,
+            object -> () -> new BlockItem(object.get(), BreadPanDirty.ITEM_PROPERTIES)
+    );
+
+    public static final RegistryObject<Block> BREAD_PAN_DIRTY_FILLED = register(
+            "bread_pan_dirty_filled",
+            BreadPanDirtyFilled::new,
+            object -> () -> new BlockItem(object.get(), BreadPanDirtyFilled.ITEM_PROPERTIES)
     );
 
     private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {

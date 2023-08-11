@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+
+  "result": {
+    "item": "creative_cooking:bread_pan",
+    "count": 1
+  }
+}

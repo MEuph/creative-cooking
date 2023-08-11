@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking.datagen.server;
 
 import dev.chrismharris.creative_cooking.datagen.BaseLootTableProvider;
-import dev.chrismharris.creative_cooking.init.BlockRegister;
+import dev.chrismharris.creative_cooking.register.BlockRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
