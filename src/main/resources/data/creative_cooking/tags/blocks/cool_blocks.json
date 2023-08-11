@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "creative_cooking:example_block",
+    "minecraft:diamond_ore"
+  ]
+}

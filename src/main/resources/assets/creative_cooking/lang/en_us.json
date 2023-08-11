@@ -1,0 +1,7 @@
+{
+  "block.creative_cooking.example_block": "Example Block",
+  "item.creative_cooking.example_item": "Example Item",
+  "item.creative_cooking.example_fuel": "Example Fuel",
+  "item.creative_cooking.example_food": "Example Food",
+  "itemGroup.creative_cooking": "Creative Cooking"
+}
