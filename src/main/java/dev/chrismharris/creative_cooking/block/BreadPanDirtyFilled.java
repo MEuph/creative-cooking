@@ -4,6 +4,8 @@ import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.register.BlockRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -71,16 +73,11 @@ public class BreadPanDirtyFilled extends Block {
 
     @SuppressWarnings("deprecation")
     @Override
-    public @NotNull InteractionResult use(@NotNull BlockState state, Level world, @NotNull BlockPos pos,
+    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos,
                                           @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
-        if (!world.isClientSide()) {
-            player.getInventory().add(new ItemStack(BlockRegister.BREAD_LOAF.get().asItem(), 1));
-            world.destroyBlock(pos, false);
-            world.setBlockAndUpdate(pos, BlockRegister.BREAD_PAN_DIRTY.get().defaultBlockState());
-
-            return InteractionResult.CONSUME;
-        }
-
-        return super.use(state, world, pos, player, hand, hit);
+        popResource(level, pos, new ItemStack(BlockRegister.BREAD_LOAF.get().asItem(), 1));
+        level.setBlockAndUpdate(pos, BlockRegister.BREAD_PAN_DIRTY.get().defaultBlockState());
+        level.playSound(null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
+        return InteractionResult.sidedSuccess(level.isClientSide);
     }
 }
