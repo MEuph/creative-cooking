@@ -19,6 +19,7 @@ public class ItemRegister {
     public static final RegistryObject<Item> CORN_SEEDS = register("corn_seeds", CornSeeds::new);
     public static final RegistryObject<Item> SOAP = register("soap", Soap::new);
     public static final RegistryObject<Item> STRAWBERRY = register("strawberry", Strawberry::new);
+    public static final RegistryObject<Item> PEANUT = register("peanut", Peanut::new);
 
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);
