@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "creative_cooking:bread_pan_dirty"
+    },
+    {
+      "item": "creative_cooking:soap"
+    },
+    {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:bread_pan",
+      "count": 1
+    }
+  ]
+}
