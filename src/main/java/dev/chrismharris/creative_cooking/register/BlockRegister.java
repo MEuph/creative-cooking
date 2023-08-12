@@ -54,6 +54,11 @@ public class BlockRegister {
             () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion())
     );
 
+    public static final RegistryObject<Block> STRAWBERRY_BUSH = registerBlockWithoutBlockItem(
+            "strawberry_bush",
+            () -> new StrawberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion())
+    );
+
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
     }

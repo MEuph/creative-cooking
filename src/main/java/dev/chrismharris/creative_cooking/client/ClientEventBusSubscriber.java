@@ -19,5 +19,6 @@ public class ClientEventBusSubscriber {
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_DIRTY.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_DIRTY_FILLED.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.CORN_CROP.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.STRAWBERRY_BUSH.get(), RenderType.cutout());
     }
 }

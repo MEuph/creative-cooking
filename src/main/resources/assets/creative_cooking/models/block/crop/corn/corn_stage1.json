@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [16, 32],
 	"textures": {
-		"0": "creative_cooking:block/crops/corn/corn_stage_1",
-		"particle": "creative_cooking:block/crops/corn/corn_stage_1"
+		"0": "creative_cooking:block/crop/corn/corn_stage1",
+		"particle": "creative_cooking:block/crop/corn/corn_stage1"
 	},
 	"elements": [
 		{

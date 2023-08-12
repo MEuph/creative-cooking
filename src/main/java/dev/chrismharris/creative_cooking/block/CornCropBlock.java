@@ -7,6 +7,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -17,16 +18,32 @@ public class CornCropBlock extends CropBlock {
 
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
 
-    public static final VoxelShape HITBOX = Block.box(0, -1, 0, 16, 19, 16);
+    public static final VoxelShape HITBOX_AGE_0 = Block.box(4, -1, 4, 12, 13, 12);
+    public static final VoxelShape HITBOX_AGE_1 = Block.box(4, -1, 4, 12, 21, 12);
+    public static final VoxelShape HITBOX_AGE_2_3 = Block.box(4, -1, 4, 12, 31, 12);
 
     public CornCropBlock(Properties properties) {
         super(properties);
+        this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0));
+    }
+
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        pBuilder.add(AGE);
     }
 
     @Override
     public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos,
                                         @NotNull CollisionContext context) {
-        return HITBOX;
+        return switch (state.getValue(AGE)) {
+            case 1 -> HITBOX_AGE_1;
+            case 2, 3 -> HITBOX_AGE_2_3;
+            default -> HITBOX_AGE_0;
+        };
+    }
+
+    @Override
+    public @NotNull IntegerProperty getAgeProperty() {
+        return AGE;
     }
 
     @Override

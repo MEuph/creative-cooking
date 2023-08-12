@@ -3,6 +3,9 @@
   "item.creative_cooking.corn_cob": "Corn",
   "block.creative_cooking.corn_crop": "Corn Crop",
 
+  "item.creative_cooking.strawberry": "Strawberry",
+  "block.creative_cooking.strawberry_bush": "Strawberry Bush",
+
   "block.creative_cooking.bread_pan_dirty": "Bread Pan (Dirty)",
   "block.creative_cooking.bread_pan_dirty_filled": "Bread Pan (Baked Bread)",
   "block.creative_cooking.bread_pan_raw": "Bread Pan (Raw Dough)",
