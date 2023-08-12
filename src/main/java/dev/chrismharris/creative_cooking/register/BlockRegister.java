@@ -5,6 +5,8 @@ import dev.chrismharris.creative_cooking.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -16,12 +18,6 @@ import java.util.function.Supplier;
 public class BlockRegister {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreativeCookingMod.MOD_ID);
     public static final DeferredRegister<Item> ITEMS = ItemRegister.ITEMS;
-
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = register(
-            "example_block",
-            ExampleBlock::new,
-            object -> () -> new BlockItem(object.get(), ExampleBlock.ITEM_PROPERTIES)
-    );
 
     public static final RegistryObject<Block> BREAD_LOAF = register(
             "bread_loaf",
@@ -52,6 +48,15 @@ public class BlockRegister {
             BreadPanDirtyFilled::new,
             object -> () -> new BlockItem(object.get(), BreadPanDirtyFilled.ITEM_PROPERTIES)
     );
+
+    public static final RegistryObject<Block> CORN_CROP = registerBlockWithoutBlockItem(
+            "corn_crop",
+            () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion())
+    );
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
 
     private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
         return BLOCKS.register(name, block);

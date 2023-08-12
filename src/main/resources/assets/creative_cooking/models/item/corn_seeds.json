@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_cooking:item/example_item"
+    "layer0": "creative_cooking:item/corn_seeds"
   }
 }

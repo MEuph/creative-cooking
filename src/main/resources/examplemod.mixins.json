@@ -1,7 +1,7 @@
 {
   "required": true,
   "priority": 1100,
-  "package": "com.example.examplemod.mixin",
+  "package": "dev.chrismharris.creative_cooking.mixin",
   "compatibilityLevel": "JAVA_16",
   "refmap": "examplemod.refmap.json",
   "mixins": [],

@@ -17,12 +17,17 @@ public class ModEnUsProvider extends LanguageProvider {
         add("itemGroup.creative_cooking", "Creative Cooking");
 
         // Items
-        add(ItemRegister.EXAMPLE_ITEM.get(), "Example Item");
-        add(ItemRegister.EXAMPLE_FUEL.get(), "Example Fuel");
-        add(ItemRegister.EXAMPLE_FOOD.get(), "Example Food");
+        add(ItemRegister.BREAD_SLICE.get(), "Slice of Bread");
+        add(ItemRegister.CORN_COB.get(), "Corn");
+        add(ItemRegister.CORN_SEEDS.get(), "Corn Seeds");
 
         // Blocks
-        add(BlockRegister.EXAMPLE_BLOCK.get(), "Example Block");
+        add(BlockRegister.CORN_CROP.get(), "Corn Crop");
+        add(BlockRegister.BREAD_LOAF.get(), "Loaf of Bread");
+        add(BlockRegister.BREAD_PAN.get(), "Bread Pan (Empty)");
+        add(BlockRegister.BREAD_PAN_DIRTY.get(), "Bread Pan (Dirty)");
+        add(BlockRegister.BREAD_PAN_DIRTY_FILLED.get(), "Bread Pan (Baked Bread)");
+        add(BlockRegister.BREAD_PAN_RAW.get(), "Bread Pan (Raw Dough)");
     }
 
 }

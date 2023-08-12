@@ -9,7 +9,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -72,7 +71,8 @@ public class BreadPanDirtyFilled extends Block {
 
     @SuppressWarnings("deprecation")
     @Override
-    public @NotNull InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+    public @NotNull InteractionResult use(@NotNull BlockState state, Level world, @NotNull BlockPos pos,
+                                          @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
         if (!world.isClientSide()) {
             player.getInventory().add(new ItemStack(BlockRegister.BREAD_LOAF.get().asItem(), 1));
             world.destroyBlock(pos, false);

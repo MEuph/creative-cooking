@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "creative_cooking:example_food"
-  },
-  "result": "creative_cooking:example_fuel",
-  "experience": 20,
-  "cookingtime": 20
-}
