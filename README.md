@@ -94,7 +94,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Chris Harris - MEuph on GitHub
 
-Project Link: [https://github.com/MEuph/creative-cooking](https://github.com/MEuph/creative-cooking)
+Project Link: [https://github.com/users/MEuph/projects/1](https://github.com/users/MEuph/projects/1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
