@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "creative_cooking:block/crop/onion/onion_crop_stage4",
+    "particle": "creative_cooking:block/crop/onion/onion_crop_stage4"
+  }
+}

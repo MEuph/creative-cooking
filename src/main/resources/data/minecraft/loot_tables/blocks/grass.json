@@ -27,7 +27,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.017857143
+                  "chance": 0.11111111111
                 }
               ],
               "functions": [
@@ -50,7 +50,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.017857143
+                  "chance": 0.11111111111
                 }
               ],
               "functions": [
@@ -73,7 +73,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.017857143
+                  "chance": 0.11111111111
                 }
               ],
               "functions": [
@@ -96,7 +96,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.017857143
+                  "chance": 0.11111111111
                 }
               ],
               "functions": [
@@ -119,7 +119,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.017857143
+                  "chance": 0.11111111111
                 }
               ],
               "functions": [
@@ -142,7 +142,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.017857143
+                  "chance": 0.11111111111
                 }
               ],
               "functions": [
@@ -165,7 +165,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.017857143
+                  "chance": 0.11111111111
                 }
               ],
               "functions": [
@@ -182,6 +182,52 @@
                 }
               ],
               "name": "creative_cooking:peanut"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.11111111111
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "creative_cooking:garlic"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.11111111111
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "creative_cooking:onion"
             }
           ]
         }

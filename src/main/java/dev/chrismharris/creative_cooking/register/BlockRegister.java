@@ -59,6 +59,16 @@ public class BlockRegister {
             PeanutCropBlock::new
     );
 
+    public static final RegistryObject<Block> ONION_CROP = registerBlockWithoutBlockItem(
+            "onion_crop",
+            OnionCropBlock::new
+    );
+
+    public static final RegistryObject<Block> GARLIC_CROP = registerBlockWithoutBlockItem(
+            "garlic_crop",
+            GarlicCropBlock::new
+    );
+
     public static final RegistryObject<Block> STRAWBERRY_BUSH = registerBlockWithoutBlockItem(
             "strawberry_bush",
             () -> new StrawberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion())

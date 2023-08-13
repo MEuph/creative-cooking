@@ -25,8 +25,9 @@ public class ItemRegister {
     public static final RegistryObject<Item> LEMON_SEEDS = register("lemon_seeds", LemonSeeds::new);
     public static final RegistryObject<Item> LIME_SEEDS = register("lime_seeds", LimeSeeds::new);
     public static final RegistryObject<Item> TOMATO_SEEDS = register("tomato_seeds", TomatoSeeds::new);
-
     public static final RegistryObject<Item> PEANUT = register("peanut", Peanut::new);
+    public static final RegistryObject<Item> ONION = register("onion", Onion::new);
+    public static final RegistryObject<Item> GARLIC = register("garlic", Garlic::new);
 
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);
