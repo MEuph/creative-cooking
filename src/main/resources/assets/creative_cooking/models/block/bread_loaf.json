@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "creative_cooking:block/foods/bread_loaf_mid",
-		"2": "creative_cooking:block/foods/bread_loaf_top",
-		"3": "creative_cooking:block/foods/bread_loaf_base",
-		"particle": "creative_cooking:block/foods/bread_loaf_base"
+		"1": "creative_cooking:block/food/bread_loaf_mid",
+		"2": "creative_cooking:block/food/bread_loaf_top",
+		"3": "creative_cooking:block/food/bread_loaf_base",
+		"particle": "creative_cooking:block/food/bread_loaf_base"
 	},
 	"elements": [
 		{

@@ -2,14 +2,17 @@
   "type": "crafting_shaped",
 
   "pattern": [
-    "I I",
-    "III",
-    "III"
+    "   ",
+    "S S",
+    "BSB"
   ],
 
   "key": {
-    "I": {
-      "item": "minecraft:iron_ingot"
+    "S": {
+      "item": "create:iron_sheet"
+    },
+    "B": {
+      "item": "minecraft:brick"
     }
   },
 

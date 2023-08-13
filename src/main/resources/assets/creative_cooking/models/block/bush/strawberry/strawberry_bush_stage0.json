@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "creative_cooking:block/bush/strawberry/strawberry_bush_stage0",
+    "particle": "creative_cooking:block/bush/strawberry/strawberry_bush_stage0"
+  }
+}
