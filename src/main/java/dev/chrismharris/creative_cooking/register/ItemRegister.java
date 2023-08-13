@@ -3,13 +3,14 @@ package dev.chrismharris.creative_cooking.register;
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.item.*;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "deprecation"})
 public class ItemRegister {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CreativeCookingMod.MOD_ID);
@@ -28,8 +29,14 @@ public class ItemRegister {
     public static final RegistryObject<Item> PEANUT = register("peanut", Peanut::new);
     public static final RegistryObject<Item> ONION = register("onion", Onion::new);
     public static final RegistryObject<Item> GARLIC = register("garlic", Garlic::new);
+    public static final RegistryObject<Item> SHRIMP_SPAWN_EGG = ITEMS.register("shrimp_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityRegister.SHRIMP_ENTITY, 0x948e8d, 0x3b3635,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB
+    )));
+    public static final RegistryObject<Item> RAW_SHRIMP = register("raw_shrimp", RawShrimp::new);
+    public static final RegistryObject<Item> COOKED_SHRIMP = register("cooked_shrimp", CookedShrimp::new);
 
-    private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
+    static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);
     }
 }

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:cod"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 35,
+          "name": "creative_cooking:raw_shrimp"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:salmon"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:tropical_fish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 13,
+          "name": "minecraft:pufferfish"
+        }
+      ]
+    }
+  ]
+}
