@@ -30,11 +30,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/MEuph/creative-cooking">
-    <img src="src/main/resources/icon.png" alt="Logo" width="80" height="80">
+    <img src="src/main/resources/icon.png" alt="Logo" width="817" height="233">
   </a>
-
-<h3 align="center">Creative Cooking</h3>
-
   <p align="center">
     A companion mod for the <a href="https://github.com/Creators-of-Create/Create">Create Mod</a> which adds new foods, crops, and machines all with the focus of improving the cullinary experience of Minecraft
     <br />
