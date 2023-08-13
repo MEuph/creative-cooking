@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MEuph/creative-cooking">
-    <img src="src/main/resources/icon.png" alt="Logo" width="80" height="80">
+    <img src="src/main/resources/icon.png" alt="Logo" width="817" height="233">
   </a>
 
 <h3 align="center">Creative Cooking</h3>
