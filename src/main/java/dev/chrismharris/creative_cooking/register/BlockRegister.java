@@ -64,6 +64,19 @@ public class BlockRegister {
             () -> new StrawberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion())
     );
 
+    public static final RegistryObject<Block> LEMON_BUSH = registerBlockWithoutBlockItem(
+            "lemon_bush",
+            () -> new LemonBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion())
+    );
+    public static final RegistryObject<Block> LIME_BUSH = registerBlockWithoutBlockItem(
+            "lime_bush",
+            () -> new LimeBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion())
+    );
+    public static final RegistryObject<Block> TOMATO_BUSH = registerBlockWithoutBlockItem(
+            "tomato_bush",
+            () -> new TomatoBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion())
+    );
+
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
     }

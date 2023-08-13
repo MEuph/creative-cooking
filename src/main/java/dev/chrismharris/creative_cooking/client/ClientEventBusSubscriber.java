@@ -21,5 +21,8 @@ public class ClientEventBusSubscriber {
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.CORN_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.PEANUT_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.STRAWBERRY_BUSH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.LEMON_BUSH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.LIME_BUSH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.TOMATO_BUSH.get(), RenderType.cutout());
     }
 }

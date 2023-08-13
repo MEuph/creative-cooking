@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creative_cooking:lemon"
+    }
+  ],
+  "result": {
+    "item": "creative_cooking:lemon_seeds",
+    "count": 1
+  }
+}
