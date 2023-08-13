@@ -37,5 +37,10 @@
 
   "item.creative_cooking.soap": "Soap",
 
+  "item.creative_cooking.shrimp_spawn_egg": "Shrimp Spawn Egg",
+  "entity.creative_cooking.shrimp_entity": "Shrimp",
+  "item.creative_cooking.raw_shrimp": "Raw Shrimp",
+  "item.creative_cooking.cooked_shrimp": "Cooked Shrimp",
+
   "itemGroup.creative_cooking": "Creative Cooking"
 }

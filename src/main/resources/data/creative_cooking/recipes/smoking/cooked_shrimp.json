@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "creative_cooking:raw_shrimp"
+  },
+  "result": "creative_cooking:cooked_shrimp",
+  "cookingTime": 50
+}
