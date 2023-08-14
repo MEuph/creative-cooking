@@ -71,6 +71,15 @@ public class ItemRegister {
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
     );
 
+    public static final RegistryObject<BucketItem> BUTTER_BUCKET = register("butter_bucket",
+            () -> new BucketItem(FluidRegister.BUTTER_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+    );
+    public static final RegistryObject<BucketItem> BUTTERMILK_BUCKET = register("buttermilk_bucket",
+            () -> new BucketItem(FluidRegister.BUTTERMILK_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+    );
+
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);
     }

@@ -64,6 +64,42 @@ public class FluidRegister {
                     .noCollission().strength(100f).noDrops())
     );
 
+    public static final RegistryObject<FlowingFluid> BUTTER_FLUID
+            = FLUIDS.register("butter_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.BUTTER_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> BUTTER_FLOWING
+            = FLUIDS.register("butter_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.BUTTER_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties BUTTER_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> BUTTER_FLUID.get(), () -> BUTTER_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xffecfb65)).slopeFindDistance(2).levelDecreasePerBlock(3)
+            .block(() -> FluidRegister.BUTTER_BLOCK.get()).bucket(() -> ItemRegister.BUTTER_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> BUTTER_BLOCK = BlockRegister.BLOCKS.register("butter",
+            () -> new LiquidBlock(() -> FluidRegister.BUTTER_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
+
+    public static final RegistryObject<FlowingFluid> BUTTERMILK_FLUID
+            = FLUIDS.register("buttermilk_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.BUTTERMILK_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> BUTTERMILK_FLOWING
+            = FLUIDS.register("buttermilk_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.BUTTERMILK_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties BUTTERMILK_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> BUTTERMILK_FLUID.get(), () -> BUTTERMILK_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xfff3fab4)).slopeFindDistance(2).levelDecreasePerBlock(3)
+            .block(() -> FluidRegister.BUTTERMILK_BLOCK.get()).bucket(() -> ItemRegister.BUTTERMILK_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> BUTTERMILK_BLOCK = BlockRegister.BLOCKS.register("buttermilk",
+            () -> new LiquidBlock(() -> FluidRegister.BUTTERMILK_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
+    
     public static void register(IEventBus bus) {
         FLUIDS.register(bus);
     }
