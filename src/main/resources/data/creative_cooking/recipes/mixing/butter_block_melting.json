@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "creative_cooking:butter_block"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "creative_cooking:butter_fluid",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement": "heated"
+}

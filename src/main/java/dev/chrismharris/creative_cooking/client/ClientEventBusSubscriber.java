@@ -36,6 +36,8 @@ public class ClientEventBusSubscriber {
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.LIME_BUSH.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.TOMATO_BUSH.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.BUTTER_BLOCK.get(), RenderType.solid());
+
         ItemBlockRenderTypes.setRenderLayer(FluidRegister.SKIM_MILK_BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(FluidRegister.SKIM_MILK_FLUID.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(FluidRegister.SKIM_MILK_FLOWING.get(), RenderType.translucent());

@@ -13,6 +13,7 @@ import dev.chrismharris.creative_cooking.item.food.root_crop.Garlic;
 import dev.chrismharris.creative_cooking.item.food.root_crop.Onion;
 import dev.chrismharris.creative_cooking.item.food.root_crop.Peanut;
 import dev.chrismharris.creative_cooking.item.food.surface_crop.CornCob;
+import dev.chrismharris.creative_cooking.item.ingredient.ButterStick;
 import dev.chrismharris.creative_cooking.item.ingredient.CornGrits;
 import dev.chrismharris.creative_cooking.item.ingredient.Cornstarch;
 import dev.chrismharris.creative_cooking.item.seed.CornSeeds;
@@ -79,6 +80,8 @@ public class ItemRegister {
             () -> new BucketItem(FluidRegister.BUTTERMILK_FLUID,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
     );
+
+    public static final RegistryObject<Item> BUTTER_STICK = register("butter_stick", ButterStick::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

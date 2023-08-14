@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "creative_cooking:butter_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:butter_stick",
+      "count": 4
+    }
+  ],
+  "processingTime": 50
+}

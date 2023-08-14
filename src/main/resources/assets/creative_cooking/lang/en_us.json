@@ -11,6 +11,9 @@
   "item.creative_cooking.butter_bucket": "Butter Bucket",
   "item.creative_cooking.buttermilk_bucket": "Buttermilk Bucket",
 
+  "item.creative_cooking.butter_stick": "Stick of Butter",
+  "block.creative_cooking.butter_block": "Block of Butter",
+
   "fluid.creative_cooking.skim_milk_fluid": "Skim Milk",
   "fluid.creative_cooking.cream_fluid": "Cream",
   "fluid.creative_cooking.butter_fluid": "Butter",
