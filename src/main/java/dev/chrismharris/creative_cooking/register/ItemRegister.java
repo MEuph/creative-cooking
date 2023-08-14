@@ -24,6 +24,7 @@ import dev.chrismharris.creative_cooking.item.util.BreadPanRaw;
 import dev.chrismharris.creative_cooking.item.util.Soap;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -65,20 +66,20 @@ public class ItemRegister {
 
     public static final RegistryObject<BucketItem> SKIM_MILK_BUCKET = register("skim_milk_bucket",
             () -> new BucketItem(FluidRegister.SKIM_MILK_FLUID,
-                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
     public static final RegistryObject<BucketItem> CREAM_BUCKET = register("cream_bucket",
             () -> new BucketItem(FluidRegister.CREAM_FLUID,
-                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
 
     public static final RegistryObject<BucketItem> BUTTER_BUCKET = register("butter_bucket",
             () -> new BucketItem(FluidRegister.BUTTER_FLUID,
-                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
     public static final RegistryObject<BucketItem> BUTTERMILK_BUCKET = register("buttermilk_bucket",
             () -> new BucketItem(FluidRegister.BUTTERMILK_FLUID,
-                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
 
     public static final RegistryObject<Item> BUTTER_STICK = register("butter_stick", ButterStick::new);
