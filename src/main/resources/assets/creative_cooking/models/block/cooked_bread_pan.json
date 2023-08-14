@@ -1,9 +1,9 @@
- {
+{
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "creative_cooking:block/bread_pan_dirty",
-		"particle": "creative_cooking:block/bread_pan_dirty"
+		"1": "creative_cooking:block/bread_pan",
+		"particle": "creative_cooking:block/bread_pan"
 	},
 	"elements": [
 		{
@@ -96,6 +96,18 @@
 				"up": {"uv": [0, 0, 0.5, 7], "texture": "#1"},
 				"down": {"uv": [0, 0, 0.5, 7], "texture": "#1"}
 			}
+		},
+		{
+			"from": [4, 5, 0],
+			"to": [12, 7, 16],
+			"faces": {
+				"north": {"uv": [10, 9, 13, 16], "texture": "#1"},
+				"east": {"uv": [13, 9, 10, 16], "texture": "#1"},
+				"south": {"uv": [10, 9, 13, 16], "texture": "#1"},
+				"west": {"uv": [13, 9, 10, 16], "texture": "#1"},
+				"up": {"uv": [10, 9, 13, 16], "texture": "#1"},
+				"down": {"uv": [10, 9, 13, 16], "texture": "#1"}
+			}
 		}
 	],
 	"display": {
@@ -131,7 +143,7 @@
 			"name": "group",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6]
+			"children": [0, 1, 2, 3, 4, 5, 6, 7]
 		}
 	]
 }

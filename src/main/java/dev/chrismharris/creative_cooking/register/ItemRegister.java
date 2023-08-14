@@ -1,7 +1,23 @@
 package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.item.*;
+import dev.chrismharris.creative_cooking.item.food.BreadSlice;
+import dev.chrismharris.creative_cooking.item.food.bush.Lemon;
+import dev.chrismharris.creative_cooking.item.food.bush.Lime;
+import dev.chrismharris.creative_cooking.item.food.bush.Strawberry;
+import dev.chrismharris.creative_cooking.item.food.bush.Tomato;
+import dev.chrismharris.creative_cooking.item.food.meat.CookedShrimp;
+import dev.chrismharris.creative_cooking.item.food.meat.RawShrimp;
+import dev.chrismharris.creative_cooking.item.food.root_crop.Garlic;
+import dev.chrismharris.creative_cooking.item.food.root_crop.Onion;
+import dev.chrismharris.creative_cooking.item.food.root_crop.Peanut;
+import dev.chrismharris.creative_cooking.item.food.surface_crop.CornCob;
+import dev.chrismharris.creative_cooking.item.seed.CornSeeds;
+import dev.chrismharris.creative_cooking.item.seed.LemonSeeds;
+import dev.chrismharris.creative_cooking.item.seed.LimeSeeds;
+import dev.chrismharris.creative_cooking.item.seed.TomatoSeeds;
+import dev.chrismharris.creative_cooking.item.util.BreadPanRaw;
+import dev.chrismharris.creative_cooking.item.util.Soap;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
@@ -35,6 +51,8 @@ public class ItemRegister {
     )));
     public static final RegistryObject<Item> RAW_SHRIMP = register("raw_shrimp", RawShrimp::new);
     public static final RegistryObject<Item> COOKED_SHRIMP = register("cooked_shrimp", CookedShrimp::new);
+    public static final RegistryObject<Item> BREAD_PAN_RAW = register("bread_pan_raw", BreadPanRaw::new);;
+    public static final RegistryObject<Item> BREAD_PAN_DIRTY = register("bread_pan_dirty", BreadPanRaw::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

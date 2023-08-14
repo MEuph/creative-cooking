@@ -1,9 +1,12 @@
 package dev.chrismharris.creative_cooking.block;
 
+import com.simibubi.create.AllItems;
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.register.BlockRegister;
+import dev.chrismharris.creative_cooking.register.ItemRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -17,9 +20,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.phys.BlockHitResult;
@@ -28,7 +34,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class BreadPanDirtyFilled extends Block {
+public class CookedBreadPan extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
     public static final VoxelShape HITBOX_NORTH_SOUTH = Block.box(3, 0, 0, 13, 6, 16);
@@ -45,7 +51,7 @@ public class BreadPanDirtyFilled extends Block {
         }
     }
 
-    public static final Properties PROPERTIES = Properties
+    public static final BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties
             .of(Material.METAL, MaterialColor.COLOR_GRAY)
             .strength(2f)
             .sound(SoundType.METAL)
@@ -54,8 +60,8 @@ public class BreadPanDirtyFilled extends Block {
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties()
             .tab(CreativeCookingMod.CC_TAB);
 
-    public BreadPanDirtyFilled() {
-        super(BreadPanDirtyFilled.PROPERTIES);
+    public CookedBreadPan() {
+        super(BreadPan.PROPERTIES);
 
         this.registerDefaultState(this.defaultBlockState().setValue(FACING, Direction.NORTH));
     }
@@ -68,8 +74,28 @@ public class BreadPanDirtyFilled extends Block {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder
+                .add(FACING);
     }
 
+    @SuppressWarnings("deprecation")
+    @Override
+    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos,
+                                          @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
+        popResource(level, pos, new ItemStack(BlockRegister.BREAD_LOAF.get().asItem(), 1));
+        level.playSound(null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
+        level.setBlock(pos, BlockRegister.BREAD_PAN.get().defaultBlockState().
+                setValue(BreadPan.DIRTY, true)
+                .setValue(BreadPan.FACING, state.getValue(CookedBreadPan.FACING)),
+                1);
+        player.getItemInHand(hand).use(level, player, hand);
+        return InteractionResult.sidedSuccess(level.isClientSide);
+    }
 
+    @Override
+    public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, boolean willHarvest, FluidState fluid) {
+        popResource(level, pos, new ItemStack(ItemRegister.BREAD_PAN_DIRTY.get(), 1));
+        popResource(level, pos, new ItemStack(BlockRegister.BREAD_LOAF.get().asItem(), 1));
+        return super.onDestroyedByPlayer(state, level, pos, player, willHarvest, fluid);
+    }
 }

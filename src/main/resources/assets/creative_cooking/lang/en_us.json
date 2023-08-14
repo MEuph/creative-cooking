@@ -27,10 +27,16 @@
   "item.creative_cooking.tomato_seeds": "Tomato Seeds",
   "item.creative_cooking.tomato_bush": "Tomato Bush",
 
-  "block.creative_cooking.bread_pan_dirty": "Bread Pan (Dirty)",
-  "block.creative_cooking.bread_pan_dirty_filled": "Bread Pan (Baked Bread)",
-  "block.creative_cooking.bread_pan_raw": "Bread Pan (Raw Dough)",
-  "block.creative_cooking.bread_pan": "Bread Pan (Empty)",
+  "block.creative_cooking.bread_pan": "Bread Pan",
+  "block.creative_cooking.cooked_bread_pan": "Bread Pan (Baked)",
+
+  "message.creative_cooking.cannot_fill_pan": "You must clean the pan first",
+
+  "item.creative_cooking.bread_pan_raw": "Bread Pan (Raw Dough)",
+  "item.creative_cooking.bread_pan_dirty": "Dirty Bread Pan",
+
+  "tooltip.creative_cooking.bread_pan_dirty.tooltip": "Wash the pan by mixing it with soap and water in a basin",
+  "tooltip.creative_cooking.bread_pan_raw.tooltip": "Bake the bread in the pan with a smoker or by bulk smoking",
 
   "block.creative_cooking.bread_loaf": "Loaf of Bread",
   "item.creative_cooking.bread_slice": "Slice of Bread",

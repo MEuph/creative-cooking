@@ -1,7 +1,7 @@
 package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.entity.ShrimpEntity;
+import dev.chrismharris.creative_cooking.entity.shrimp.ShrimpEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

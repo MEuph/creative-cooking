@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:smoking",
-  "ingredient": {
-    "item": "creative_cooking:bread_pan_raw"
-  },
-  "result": "creative_cooking:bread_pan_dirty_filled",
-  "cookingTime": 100
-}

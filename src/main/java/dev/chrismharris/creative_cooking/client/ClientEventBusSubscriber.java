@@ -2,8 +2,8 @@ package dev.chrismharris.creative_cooking.client;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.register.EntityRegister;
-import dev.chrismharris.creative_cooking.entity.ShrimpEntityModel;
-import dev.chrismharris.creative_cooking.entity.ShrimpEntityRenderer;
+import dev.chrismharris.creative_cooking.entity.shrimp.ShrimpEntityModel;
+import dev.chrismharris.creative_cooking.entity.shrimp.ShrimpEntityRenderer;
 import dev.chrismharris.creative_cooking.register.BlockRegister;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -25,9 +25,10 @@ public class ClientEventBusSubscriber {
     public static void clientBlockSetup(FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_LOAF.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_RAW.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_DIRTY.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_DIRTY_FILLED.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.COOKED_BREAD_PAN.get(), RenderType.cutout());
+//        ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_RAW.get(), RenderType.cutout());
+//        ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_DIRTY.get(), RenderType.cutout());
+//        ItemBlockRenderTypes.setRenderLayer(BlockRegister.BREAD_PAN_DIRTY_FILLED.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.CORN_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.PEANUT_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.ONION_CROP.get(), RenderType.cutout());
