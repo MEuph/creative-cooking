@@ -2,6 +2,7 @@ package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.item.food.BreadSlice;
+import dev.chrismharris.creative_cooking.item.food.basic.BowlOfGrits;
 import dev.chrismharris.creative_cooking.item.food.bush.Lemon;
 import dev.chrismharris.creative_cooking.item.food.bush.Lime;
 import dev.chrismharris.creative_cooking.item.food.bush.Strawberry;
@@ -12,6 +13,8 @@ import dev.chrismharris.creative_cooking.item.food.root_crop.Garlic;
 import dev.chrismharris.creative_cooking.item.food.root_crop.Onion;
 import dev.chrismharris.creative_cooking.item.food.root_crop.Peanut;
 import dev.chrismharris.creative_cooking.item.food.surface_crop.CornCob;
+import dev.chrismharris.creative_cooking.item.ingredient.CornGrits;
+import dev.chrismharris.creative_cooking.item.ingredient.Cornstarch;
 import dev.chrismharris.creative_cooking.item.seed.CornSeeds;
 import dev.chrismharris.creative_cooking.item.seed.LemonSeeds;
 import dev.chrismharris.creative_cooking.item.seed.LimeSeeds;
@@ -53,6 +56,9 @@ public class ItemRegister {
     public static final RegistryObject<Item> COOKED_SHRIMP = register("cooked_shrimp", CookedShrimp::new);
     public static final RegistryObject<Item> BREAD_PAN_RAW = register("bread_pan_raw", BreadPanRaw::new);;
     public static final RegistryObject<Item> BREAD_PAN_DIRTY = register("bread_pan_dirty", BreadPanRaw::new);
+    public static final RegistryObject<Item> CORN_GRITS = register("corn_grits", CornGrits::new);
+    public static final RegistryObject<Item> CORNSTARCH = register("cornstarch", Cornstarch::new);
+    public static final RegistryObject<Item> BOWL_OF_GRITS = register("bowl_of_grits", BowlOfGrits::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

@@ -1,0 +1,15 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "creative_cooking:corn_seeds"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:cornstarch",
+      "chance": 0.5
+    }
+  ],
+  "processingTime": 50
+}

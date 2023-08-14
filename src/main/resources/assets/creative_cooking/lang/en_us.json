@@ -1,7 +1,10 @@
 {
-  "item.creative_cooking.corn_seeds": "Corn Seeds",
+  "item.creative_cooking.corn_seeds": "Corn Kernels",
   "item.creative_cooking.corn_cob": "Corn",
   "block.creative_cooking.corn_crop": "Corn Crop",
+  "item.creative_cooking.corn_grits": "Corn Grits",
+  "item.creative_cooking.bowl_of_grits": "Bowl of Grits",
+  "item.creative_cooking.cornstarch": "Cornstarch",
 
   "item.creative_cooking.peanut": "Peanut",
   "item.creative_cooking.peanut_crop": "Peanut Crop",

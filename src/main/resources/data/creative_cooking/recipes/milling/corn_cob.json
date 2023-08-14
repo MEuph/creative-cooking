@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "creative_cooking:corn_cob"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:corn_grits"
+    },
+    {
+      "item": "creative_cooking:corn_seeds",
+      "chance": 0.1
+    }
+  ],
+  "processingTime": 50
+}
