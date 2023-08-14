@@ -1,7 +1,9 @@
 package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.block.*;
+import dev.chrismharris.creative_cooking.block.BreadLoaf;
+import dev.chrismharris.creative_cooking.block.BreadPan;
+import dev.chrismharris.creative_cooking.block.CookedBreadPan;
 import dev.chrismharris.creative_cooking.block.bush.LemonBushBlock;
 import dev.chrismharris.creative_cooking.block.bush.LimeBushBlock;
 import dev.chrismharris.creative_cooking.block.bush.StrawberryBushBlock;

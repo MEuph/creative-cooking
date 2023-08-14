@@ -12,8 +12,8 @@ public class RawShrimp extends Item {
             .food(new FoodProperties.Builder()
                     .saturationMod(0f)
                     .nutrition(1)
-                    .effect(() -> new MobEffectInstance(MobEffects.POISON, 20*10, 0), 0.75f)
-                    .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 20*30, 0), 0.25f)
+                    .effect(() -> new MobEffectInstance(MobEffects.POISON, 20 * 10, 0), 0.75f)
+                    .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 20 * 30, 0), 0.25f)
                     .meat()
                     .build()
             );

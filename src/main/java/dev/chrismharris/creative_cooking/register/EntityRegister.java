@@ -18,8 +18,8 @@ public class EntityRegister {
     public static final RegistryObject<EntityType<ShrimpEntity>> SHRIMP_ENTITY = ENTITY_TYPES.register(
             "shrimp_entity",
             () -> EntityType.Builder.of(
-                    ShrimpEntity::new,
-                    MobCategory.WATER_AMBIENT)
+                            ShrimpEntity::new,
+                            MobCategory.WATER_AMBIENT)
                     .sized(10f / 16f, 6f / 16f)
                     .build(
                             new ResourceLocation(CreativeCookingMod.MOD_ID, "shrimp_entity").toString()

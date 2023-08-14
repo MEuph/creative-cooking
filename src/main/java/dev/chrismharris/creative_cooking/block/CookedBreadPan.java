@@ -1,12 +1,10 @@
 package dev.chrismharris.creative_cooking.block;
 
-import com.simibubi.create.AllItems;
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.register.BlockRegister;
 import dev.chrismharris.creative_cooking.register.ItemRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -23,7 +21,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Material;
@@ -85,8 +82,8 @@ public class CookedBreadPan extends Block {
         popResource(level, pos, new ItemStack(BlockRegister.BREAD_LOAF.get().asItem(), 1));
         level.playSound(null, pos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
         level.setBlock(pos, BlockRegister.BREAD_PAN.get().defaultBlockState().
-                setValue(BreadPan.DIRTY, true)
-                .setValue(BreadPan.FACING, state.getValue(CookedBreadPan.FACING)),
+                        setValue(BreadPan.DIRTY, true)
+                        .setValue(BreadPan.FACING, state.getValue(CookedBreadPan.FACING)),
                 1);
         player.getItemInHand(hand).use(level, player, hand);
         return InteractionResult.sidedSuccess(level.isClientSide);

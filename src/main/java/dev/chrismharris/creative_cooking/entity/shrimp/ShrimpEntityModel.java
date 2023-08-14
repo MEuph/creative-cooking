@@ -11,47 +11,47 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
 public class ShrimpEntityModel<T extends ShrimpEntity> extends EntityModel<T> {
-	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(
+    // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(
             CreativeCookingMod.MOD_ID, "shrimp_entity"), "main");
-	private final ModelPart shrimp;
+    private final ModelPart shrimp;
 
-	public ShrimpEntityModel(ModelPart root) {
-		this.shrimp = root.getChild("shrimp");
-	}
+    public ShrimpEntityModel(ModelPart root) {
+        this.shrimp = root.getChild("shrimp");
+    }
 
-	public static LayerDefinition createBodyLayer() {
-		MeshDefinition meshdefinition = new MeshDefinition();
-		PartDefinition partdefinition = meshdefinition.getRoot();
+    public static LayerDefinition createBodyLayer() {
+        MeshDefinition meshdefinition = new MeshDefinition();
+        PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition shrimp = partdefinition.addOrReplaceChild("shrimp", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
+        PartDefinition shrimp = partdefinition.addOrReplaceChild("shrimp", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 
-		shrimp.addOrReplaceChild("tail", CubeListBuilder.create().texOffs(10, 0).addBox(-1.0F, -3.0F, -1.0F, 1.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        shrimp.addOrReplaceChild("tail", CubeListBuilder.create().texOffs(10, 0).addBox(-1.0F, -3.0F, -1.0F, 1.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		shrimp.addOrReplaceChild("midsection", CubeListBuilder.create().texOffs(10, 12).addBox(-1.0F, -7.0F, 3.0F, 1.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        shrimp.addOrReplaceChild("midsection", CubeListBuilder.create().texOffs(10, 12).addBox(-1.0F, -7.0F, 3.0F, 1.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		shrimp.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -7.0F, -5.0F, 1.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        shrimp.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -7.0F, -5.0F, 1.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		shrimp.addOrReplaceChild("antennae", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -9.0F, -8.0F, 0.0F, 2.0F, 4.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 2).addBox(0.0F, -9.0F, -8.0F, 0.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        shrimp.addOrReplaceChild("antennae", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -9.0F, -8.0F, 0.0F, 2.0F, 4.0F, new CubeDeformation(0.0F))
+                .texOffs(0, 2).addBox(0.0F, -9.0F, -8.0F, 0.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		shrimp.addOrReplaceChild("eyes", CubeListBuilder.create().texOffs(0, 2).addBox(0.0F, -7.0F, -5.0F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 0).addBox(-2.0F, -7.0F, -5.0F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        shrimp.addOrReplaceChild("eyes", CubeListBuilder.create().texOffs(0, 2).addBox(0.0F, -7.0F, -5.0F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+                .texOffs(0, 0).addBox(-2.0F, -7.0F, -5.0F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
 
         shrimp.addOrReplaceChild("legs", CubeListBuilder.create().texOffs(0, 6).addBox(0.0F, -5.0F, -4.0F, 0.0F, 2.0F, 6.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 4).addBox(-1.0F, -5.0F, -4.0F, 0.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+                .texOffs(0, 4).addBox(-1.0F, -5.0F, -4.0F, 0.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		return LayerDefinition.create(meshdefinition, 32, 32);
-	}
+        return LayerDefinition.create(meshdefinition, 32, 32);
+    }
 
-	@Override
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    @Override
+    public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 
-	}
+    }
 
-	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		shrimp.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-	}
+    @Override
+    public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+        shrimp.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+    }
 }

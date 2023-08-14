@@ -5,6 +5,7 @@ import dev.chrismharris.creative_cooking.register.BlockRegister;
 import dev.chrismharris.creative_cooking.register.ItemRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
+
 public class ModEnUsProvider extends LanguageProvider {
 
     public ModEnUsProvider(DataGenerator gen) {

@@ -21,6 +21,7 @@ import dev.chrismharris.creative_cooking.item.seed.LimeSeeds;
 import dev.chrismharris.creative_cooking.item.seed.TomatoSeeds;
 import dev.chrismharris.creative_cooking.item.util.BreadPanRaw;
 import dev.chrismharris.creative_cooking.item.util.Soap;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
@@ -51,14 +52,24 @@ public class ItemRegister {
     public static final RegistryObject<Item> SHRIMP_SPAWN_EGG = ITEMS.register("shrimp_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityRegister.SHRIMP_ENTITY, 0x948e8d, 0x3b3635,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB
-    )));
+                    )));
     public static final RegistryObject<Item> RAW_SHRIMP = register("raw_shrimp", RawShrimp::new);
     public static final RegistryObject<Item> COOKED_SHRIMP = register("cooked_shrimp", CookedShrimp::new);
-    public static final RegistryObject<Item> BREAD_PAN_RAW = register("bread_pan_raw", BreadPanRaw::new);;
+    public static final RegistryObject<Item> BREAD_PAN_RAW = register("bread_pan_raw", BreadPanRaw::new);
+    ;
     public static final RegistryObject<Item> BREAD_PAN_DIRTY = register("bread_pan_dirty", BreadPanRaw::new);
     public static final RegistryObject<Item> CORN_GRITS = register("corn_grits", CornGrits::new);
     public static final RegistryObject<Item> CORNSTARCH = register("cornstarch", Cornstarch::new);
     public static final RegistryObject<Item> BOWL_OF_GRITS = register("bowl_of_grits", BowlOfGrits::new);
+
+    public static final RegistryObject<BucketItem> SKIM_MILK_BUCKET = register("skim_milk_bucket",
+            () -> new BucketItem(FluidRegister.SKIM_MILK_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+    );
+    public static final RegistryObject<BucketItem> CREAM_BUCKET = register("cream_bucket",
+            () -> new BucketItem(FluidRegister.CREAM_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1))
+    );
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

@@ -6,6 +6,12 @@
   "item.creative_cooking.bowl_of_grits": "Bowl of Grits",
   "item.creative_cooking.cornstarch": "Cornstarch",
 
+  "item.creative_cooking.skim_milk_bucket": "Skim Milk Bucket",
+  "item.creative_cooking.cream_bucket": "Cream Bucket",
+
+  "fluid.creative_cooking.skim_milk_fluid": "Skim Milk",
+  "fluid.creative_cooking.cream_fluid": "Cream",
+
   "item.creative_cooking.peanut": "Peanut",
   "item.creative_cooking.peanut_crop": "Peanut Crop",
 
