@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "creative_cooking:mozzarella_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:mozzarella_block"
+    }
+  ]
+}

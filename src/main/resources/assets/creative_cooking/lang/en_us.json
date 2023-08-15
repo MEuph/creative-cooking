@@ -5,19 +5,26 @@
   "item.creative_cooking.corn_grits": "Corn Grits",
   "item.creative_cooking.bowl_of_grits": "Bowl of Grits",
   "item.creative_cooking.cornstarch": "Cornstarch",
+  "item.creative_cooking.rennet": "Rennet",
+  "item.creative_cooking.salt": "Salt",
 
   "item.creative_cooking.skim_milk_bucket": "Skim Milk Bucket",
   "item.creative_cooking.cream_bucket": "Cream Bucket",
   "item.creative_cooking.butter_bucket": "Butter Bucket",
   "item.creative_cooking.buttermilk_bucket": "Buttermilk Bucket",
+  "item.creative_cooking.mozzarella_bucket": "Mozzarella Bucket",
 
   "item.creative_cooking.butter_stick": "Stick of Butter",
   "block.creative_cooking.butter_block": "Block of Butter",
+
+  "item.creative_cooking.mozzarella_ball": "Ball of Mozzarella",
+  "block.creative_cooking.mozzarella_block": "Block of Mozzarella",
 
   "fluid.creative_cooking.skim_milk_fluid": "Skim Milk",
   "fluid.creative_cooking.cream_fluid": "Cream",
   "fluid.creative_cooking.butter_fluid": "Butter",
   "fluid.creative_cooking.buttermilk_fluid": "Buttermilk",
+  "fluid.creative_cooking.mozzarella_fluid": "Mozzarella",
 
   "item.creative_cooking.peanut": "Peanut",
   "item.creative_cooking.peanut_crop": "Peanut Crop",

@@ -1,10 +1,7 @@
 package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
-import dev.chrismharris.creative_cooking.block.BreadLoaf;
-import dev.chrismharris.creative_cooking.block.BreadPan;
-import dev.chrismharris.creative_cooking.block.ButterBlock;
-import dev.chrismharris.creative_cooking.block.CookedBreadPan;
+import dev.chrismharris.creative_cooking.block.*;
 import dev.chrismharris.creative_cooking.block.bush.LemonBushBlock;
 import dev.chrismharris.creative_cooking.block.bush.LimeBushBlock;
 import dev.chrismharris.creative_cooking.block.bush.StrawberryBushBlock;
@@ -51,6 +48,12 @@ public class BlockRegister {
             "butter_block",
             ButterBlock::new,
             object -> () -> new BlockItem(object.get(), ButterBlock.ITEM_PROPERTIES)
+    );
+
+    public static final RegistryObject<Block> MOZZARELLA_BLOCK = register(
+            "mozzarella_block",
+            MozzarellaBlock::new,
+            object -> () -> new BlockItem(object.get(), MozzarellaBlock.ITEM_PROPERTIES)
     );
 
     public static final RegistryObject<Block> CORN_CROP = registerBlockWithoutBlockItem(

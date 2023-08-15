@@ -24,6 +24,9 @@ public class FluidRegister {
 
     public static final ResourceLocation MILK_STILL_RL = new ResourceLocation("forge", "block/milk_still");
     public static final ResourceLocation MILK_FLOWING_RL = new ResourceLocation("forge", "block/milk_flowing");
+    
+    public static final ResourceLocation TEA_STILL_RL = new ResourceLocation("create", "fluid/tea_still");
+    public static final ResourceLocation TEA_FLOWING_RL = new ResourceLocation("create", "fluid/tea_flow");
 
     public static final DeferredRegister<Fluid> FLUIDS
             = DeferredRegister.create(ForgeRegistries.FLUIDS, CreativeCookingMod.MOD_ID);
@@ -93,10 +96,28 @@ public class FluidRegister {
             .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
             .color(0xfff3fab4)).slopeFindDistance(2).levelDecreasePerBlock(3)
             .block(() -> FluidRegister.BUTTERMILK_BLOCK.get()).bucket(() -> ItemRegister.BUTTERMILK_BUCKET.get()
-            );
+    );
 
     public static final RegistryObject<LiquidBlock> BUTTERMILK_BLOCK = BlockRegister.BLOCKS.register("buttermilk",
             () -> new LiquidBlock(() -> FluidRegister.BUTTERMILK_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
+
+    public static final RegistryObject<FlowingFluid> MOZZARELLA_FLUID
+            = FLUIDS.register("mozzarella_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.MOZZARELLA_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> MOZZARELLA_FLOWING
+            = FLUIDS.register("mozzarella_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.MOZZARELLA_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties MOZZARELLA_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> MOZZARELLA_FLUID.get(), () -> MOZZARELLA_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xffffd9f6)).slopeFindDistance(2).levelDecreasePerBlock(3)
+            .block(() -> FluidRegister.MOZZARELLA_BLOCK.get()).bucket(() -> ItemRegister.MOZZARELLA_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> MOZZARELLA_BLOCK = BlockRegister.BLOCKS.register("mozzarella",
+            () -> new LiquidBlock(() -> FluidRegister.MOZZARELLA_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops())
     );
     

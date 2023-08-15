@@ -13,9 +13,7 @@ import dev.chrismharris.creative_cooking.item.food.root_crop.Garlic;
 import dev.chrismharris.creative_cooking.item.food.root_crop.Onion;
 import dev.chrismharris.creative_cooking.item.food.root_crop.Peanut;
 import dev.chrismharris.creative_cooking.item.food.surface_crop.CornCob;
-import dev.chrismharris.creative_cooking.item.ingredient.ButterStick;
-import dev.chrismharris.creative_cooking.item.ingredient.CornGrits;
-import dev.chrismharris.creative_cooking.item.ingredient.Cornstarch;
+import dev.chrismharris.creative_cooking.item.ingredient.*;
 import dev.chrismharris.creative_cooking.item.seed.CornSeeds;
 import dev.chrismharris.creative_cooking.item.seed.LemonSeeds;
 import dev.chrismharris.creative_cooking.item.seed.LimeSeeds;
@@ -81,8 +79,16 @@ public class ItemRegister {
             () -> new BucketItem(FluidRegister.BUTTERMILK_FLUID,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
+    public static final RegistryObject<BucketItem> MOZZARELLA_BUCKET = register("mozzarella_bucket",
+            () -> new BucketItem(FluidRegister.MOZZARELLA_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
+    );
 
     public static final RegistryObject<Item> BUTTER_STICK = register("butter_stick", ButterStick::new);
+    public static final RegistryObject<Item> MOZZARELLA_BALL = register("mozzarella_ball", MozzarellaBall::new);
+
+    public static final RegistryObject<Item> RENNET = register("rennet", Rennet::new);
+    public static final RegistryObject<Item> SALT = register("salt", Salt::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

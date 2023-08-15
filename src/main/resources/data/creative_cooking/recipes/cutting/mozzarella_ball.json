@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "creative_cooking:mozzarella_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:mozzarella_ball",
+      "count": 9
+    }
+  ],
+  "processingTime": 50
+}

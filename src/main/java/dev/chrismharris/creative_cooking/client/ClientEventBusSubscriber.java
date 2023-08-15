@@ -37,10 +37,27 @@ public class ClientEventBusSubscriber {
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.TOMATO_BUSH.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.BUTTER_BLOCK.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.MOZZARELLA_BLOCK.get(), RenderType.solid());
 
         ItemBlockRenderTypes.setRenderLayer(FluidRegister.SKIM_MILK_BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(FluidRegister.SKIM_MILK_FLUID.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(FluidRegister.SKIM_MILK_FLOWING.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.BUTTERMILK_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.BUTTERMILK_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.BUTTERMILK_FLOWING.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.CREAM_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.CREAM_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.CREAM_FLOWING.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.BUTTER_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.BUTTER_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.BUTTER_FLOWING.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.MOZZARELLA_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.MOZZARELLA_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(FluidRegister.MOZZARELLA_FLOWING.get(), RenderType.translucent());
 
         EntityRenderers.register(EntityRegister.SHRIMP_ENTITY.get(), ShrimpEntityRenderer::new);
     }
