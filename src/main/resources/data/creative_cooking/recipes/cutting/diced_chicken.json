@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "creative_cooking:sliced_chicken"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:diced_chicken",
+      "count": 3
+    }
+  ],
+  "processingTime": 50
+}

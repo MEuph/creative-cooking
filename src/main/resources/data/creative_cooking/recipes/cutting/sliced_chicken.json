@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:chicken"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:sliced_chicken",
+      "count": 3
+    }
+  ],
+  "processingTime": 50
+}
