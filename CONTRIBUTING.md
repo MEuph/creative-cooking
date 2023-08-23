@@ -7,6 +7,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Pull Request Process
 
+0. Check [template issue](https://github.com/MEuph/creative-cooking/blob/mc1.18/main/ISSUE.md)
 1. Create a GitHub issue describing what you would like to add, and make sure it is substantially different from an existing issue
     1a. If there is already an issue for what you would like to add, you may continue, but use that issue as a reference
 2. Create a fork for your issue from mc1.18/main
@@ -15,7 +16,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 5. Congrats! Your PR has been added, and if the devs of the mod find it to be a good addition, they will merge it!
 
 ## Commit Process
-1. Setup your development environment. <Add Eclipse Instructions>. For IntelliJ, import build.gradle as a project, let gradle do its thing, and then click the gradle icon on the right side of the window, and select Tasks > forgegradle runs > genIntellijRuns
+1. Setup your development environment. <!--Add Eclipse Instructions-->For IntelliJ, import build.gradle as a project, let gradle do its thing, and then click the gradle icon on the right side of the window, and select Tasks > forgegradle runs > genIntellijRuns
 2. Make changes to your hearts content
 3. Commit your changes to your own fork
 
@@ -74,13 +75,6 @@ representative at an online or offline event. Representation of a project may be
 further defined and clarified by project maintainers.
 
 ### Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
