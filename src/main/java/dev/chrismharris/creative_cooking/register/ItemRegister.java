@@ -29,7 +29,9 @@ public class ItemRegister {
     public static final RegistryObject<Item> CORN_COB = register("corn_cob", CornCob::new);
     public static final RegistryObject<Item> CORN_SEEDS = register("corn_seeds", CornSeeds::new);
     public static final RegistryObject<Item> SOAP = register("soap", Soap::new);
+    public static final RegistryObject<Item> EMPTY_JAR = register("empty_jar", EmptyJar::new);
     public static final RegistryObject<Item> STRAWBERRY = register("strawberry", Strawberry::new);
+    public static final RegistryObject<Item> STRAWBERRY_JAM = register("strawberry_jam", StrawberryJam::new);
     public static final RegistryObject<Item> LEMON = register("lemon", Lemon::new);
     public static final RegistryObject<Item> LIME = register("lime", Lime::new);
     public static final RegistryObject<Item> TOMATO = register("tomato", Tomato::new);
@@ -73,6 +75,11 @@ public class ItemRegister {
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
     public static final RegistryObject<BucketItem> MOZZARELLA_BUCKET = register("mozzarella_bucket",
+            () -> new BucketItem(FluidRegister.MOZZARELLA_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
+    );
+
+    public static final RegistryObject<BucketItem> STRAWBERRY_JAM_BUCKET = register("strawberry_jam_bucket",
             () -> new BucketItem(FluidRegister.MOZZARELLA_FLUID,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );

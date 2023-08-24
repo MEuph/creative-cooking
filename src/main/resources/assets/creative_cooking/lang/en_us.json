@@ -40,8 +40,13 @@
   "item.creative_cooking.onion": "Onion",
   "item.creative_cooking.onion_crop": "Onion Crop",
 
+  "item.creative_cooking.empty_jar": "Empty Jar",
+
   "item.creative_cooking.strawberry": "Strawberry",
   "block.creative_cooking.strawberry_bush": "Strawberry Bush",
+  "item.creative_cooking.strawberry_jam": "Strawberry Jam",
+  "item.creative_cooking.strawberry_jam_bucket": "Bucket of Strawberry Jam",
+  "fluid.creative_cooking.strawberry_jam_fluid": "Strawberry Jam",
 
   "item.creative_cooking.lemon": "Lemon",
   "item.creative_cooking.lemon_seeds": "Lemon Seeds",

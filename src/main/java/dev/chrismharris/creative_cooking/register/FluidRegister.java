@@ -112,12 +112,30 @@ public class FluidRegister {
     public static final ForgeFlowingFluid.Properties MOZZARELLA_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> MOZZARELLA_FLUID.get(), () -> MOZZARELLA_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
             .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
-            .color(0xffffd9f6)).slopeFindDistance(2).levelDecreasePerBlock(3)
+            .color(0xffffddf9)).slopeFindDistance(2).levelDecreasePerBlock(3)
             .block(() -> FluidRegister.MOZZARELLA_BLOCK.get()).bucket(() -> ItemRegister.MOZZARELLA_BUCKET.get()
             );
 
     public static final RegistryObject<LiquidBlock> MOZZARELLA_BLOCK = BlockRegister.BLOCKS.register("mozzarella",
             () -> new LiquidBlock(() -> FluidRegister.MOZZARELLA_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
+
+    public static final RegistryObject<FlowingFluid> STRAWBERRY_JAM_FLUID
+            = FLUIDS.register("strawberry_jam_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.STRAWBERRY_JAM_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> STRAWBERRY_JAM_FLOWING
+            = FLUIDS.register("strawberry_jam_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.STRAWBERRY_JAM_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties STRAWBERRY_JAM_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> STRAWBERRY_JAM_FLUID.get(), () -> STRAWBERRY_JAM_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xffff006e)).slopeFindDistance(2).levelDecreasePerBlock(4).tickRate(2)
+            .block(() -> FluidRegister.STRAWBERRY_JAM_BLOCK.get()).bucket(() -> ItemRegister.STRAWBERRY_JAM_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> STRAWBERRY_JAM_BLOCK = BlockRegister.BLOCKS.register("strawberry_jam_block",
+            () -> new LiquidBlock(() -> FluidRegister.STRAWBERRY_JAM_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops())
     );
     
