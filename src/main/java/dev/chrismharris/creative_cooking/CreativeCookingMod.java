@@ -17,7 +17,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.jetbrains.annotations.NotNull;
-import software.bernie.geckolib3.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("creative_cooking")
@@ -40,8 +39,6 @@ public class CreativeCookingMod {
         FluidRegister.FLUIDS.register(bus);
         BlockRegister.BLOCKS.register(bus);
         ItemRegister.ITEMS.register(bus);
-
-        GeckoLib.initialize();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
