@@ -84,6 +84,11 @@ public class ItemRegister {
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
 
+    public static final RegistryObject<BucketItem> PEANUT_OIL_BUCKET = register("peanut_oil_bucket",
+            () -> new BucketItem(FluidRegister.PEANUT_OIL_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
+    );
+    
     public static final RegistryObject<Item> BUTTER_STICK = register("butter_stick", ButterStick::new);
     public static final RegistryObject<Item> MOZZARELLA_BALL = register("mozzarella_ball", MozzarellaBall::new);
     public static final RegistryObject<Item> COW_STOMACH = register("cow_stomach", CowStomach::new);

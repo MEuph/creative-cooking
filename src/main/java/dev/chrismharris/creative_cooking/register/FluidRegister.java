@@ -138,6 +138,24 @@ public class FluidRegister {
             () -> new LiquidBlock(() -> FluidRegister.STRAWBERRY_JAM_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops())
     );
+
+    public static final RegistryObject<FlowingFluid> PEANUT_OIL_FLUID
+            = FLUIDS.register("peanut_oil_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.PEANUT_OIL_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> PEANUT_OIL_FLOWING
+            = FLUIDS.register("peanut_oil_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.PEANUT_OIL_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties PEANUT_OIL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> PEANUT_OIL_FLUID.get(), () -> PEANUT_OIL_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xffffc571)).slopeFindDistance(2).levelDecreasePerBlock(4).tickRate(2)
+            .block(() -> FluidRegister.PEANUT_OIL_BLOCK.get()).bucket(() -> ItemRegister.PEANUT_OIL_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> PEANUT_OIL_BLOCK = BlockRegister.BLOCKS.register("peanut_oil_block",
+            () -> new LiquidBlock(() -> FluidRegister.PEANUT_OIL_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
     
     public static void register(IEventBus bus) {
         FLUIDS.register(bus);
