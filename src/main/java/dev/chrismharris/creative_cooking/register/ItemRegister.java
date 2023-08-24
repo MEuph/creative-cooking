@@ -80,7 +80,7 @@ public class ItemRegister {
     );
 
     public static final RegistryObject<BucketItem> STRAWBERRY_JAM_BUCKET = register("strawberry_jam_bucket",
-            () -> new BucketItem(FluidRegister.MOZZARELLA_FLUID,
+            () -> new BucketItem(FluidRegister.STRAWBERRY_JAM_FLUID,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
 
