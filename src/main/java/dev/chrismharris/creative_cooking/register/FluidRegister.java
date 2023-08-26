@@ -210,6 +210,23 @@ public class FluidRegister {
             () -> new LiquidBlock(() -> FluidRegister.PEANUT_BUTTER_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops())
     );
+    public static final RegistryObject<FlowingFluid> TOMATO_SAUCE_FLUID
+            = FLUIDS.register("tomato_sauce_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.TOMATO_SAUCE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> TOMATO_SAUCE_FLOWING
+            = FLUIDS.register("tomato_sauce_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.TOMATO_SAUCE_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties TOMATO_SAUCE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> TOMATO_SAUCE_FLUID.get(), () -> TOMATO_SAUCE_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xff5e0505)).slopeFindDistance(2).levelDecreasePerBlock(4).tickRate(2)
+            .block(() -> FluidRegister.TOMATO_SAUCE_BLOCK.get()).bucket(() -> ItemRegister.TOMATO_SAUCE_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> TOMATO_SAUCE_BLOCK = BlockRegister.BLOCKS.register("tomato_sauce_block",
+            () -> new LiquidBlock(() -> FluidRegister.TOMATO_SAUCE_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
     
     public static void register(IEventBus bus) {
         FLUIDS.register(bus);

@@ -102,6 +102,10 @@ public class ItemRegister {
             () -> new BucketItem(FluidRegister.LEMON_JUICE_FLUID,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
+    public static final RegistryObject<BucketItem> TOMATO_SAUCE_BUCKET = register("tomato_sauce_bucket",
+            () -> new BucketItem(FluidRegister.TOMATO_SAUCE_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
+    );
     
     public static final RegistryObject<Item> BUTTER_STICK = register("butter_stick", ButterStick::new);
     public static final RegistryObject<Item> MOZZARELLA_BALL = register("mozzarella_ball", MozzarellaBall::new);
@@ -110,6 +114,9 @@ public class ItemRegister {
     public static final RegistryObject<Item> SALT = register("salt", Salt::new);
     public static final RegistryObject<Item> LIME_JUICE = register("lime_juice", LimeJuice::new);
     public static final RegistryObject<Item> LEMON_JUICE = register("lemon_juice", LemonJuice::new);
+    public static final RegistryObject<Item> DICED_ONION = register("diced_onion", DicedOnion::new);
+    public static final RegistryObject<Item> MINCED_GARLIC = register("minced_garlic", MincedGarlic::new);
+    public static final RegistryObject<Item> TOMATO_SAUCE = register("tomato_sauce", TomatoSauce::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);
