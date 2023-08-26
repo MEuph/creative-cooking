@@ -94,12 +94,22 @@ public class ItemRegister {
             () -> new BucketItem(FluidRegister.PEANUT_BUTTER_FLUID,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
+    public static final RegistryObject<BucketItem> LIME_JUICE_BUCKET = register("lime_juice_bucket",
+            () -> new BucketItem(FluidRegister.LIME_JUICE_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
+    );
+    public static final RegistryObject<BucketItem> LEMON_JUICE_BUCKET = register("lemon_juice_bucket",
+            () -> new BucketItem(FluidRegister.LEMON_JUICE_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
+    );
     
     public static final RegistryObject<Item> BUTTER_STICK = register("butter_stick", ButterStick::new);
     public static final RegistryObject<Item> MOZZARELLA_BALL = register("mozzarella_ball", MozzarellaBall::new);
     public static final RegistryObject<Item> COW_STOMACH = register("cow_stomach", CowStomach::new);
     public static final RegistryObject<Item> RENNET = register("rennet", Rennet::new);
     public static final RegistryObject<Item> SALT = register("salt", Salt::new);
+    public static final RegistryObject<Item> LIME_JUICE = register("lime_juice", LimeJuice::new);
+    public static final RegistryObject<Item> LEMON_JUICE = register("lemon_juice", LemonJuice::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

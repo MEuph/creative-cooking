@@ -58,10 +58,16 @@
   "item.creative_cooking.lemon": "Lemon",
   "item.creative_cooking.lemon_seeds": "Lemon Seeds",
   "item.creative_cooking.lemon_bush": "Lemon Bush",
+  "item.creative_cooking.lemon_juice": "Lemon Juice",
+  "fluid.creative_cooking.lemon_juice_fluid": "Lemon Juice",
+  "item.creative_cooking.lemon_juice_bucket": "Bucket of Lemon Juice",
 
   "item.creative_cooking.lime": "Lime",
   "item.creative_cooking.lime_seeds": "Lime Seeds",
   "item.creative_cooking.lime_bush": "Lime Bush",
+  "item.creative_cooking.lime_juice": "Lime Juice",
+  "fluid.creative_cooking.lime_juice_fluid": "Lime Juice",
+  "item.creative_cooking.lime_juice_bucket": "Bucket of Lime Juice",
 
   "item.creative_cooking.tomato": "Tomato",
   "item.creative_cooking.tomato_seeds": "Tomato Seeds",

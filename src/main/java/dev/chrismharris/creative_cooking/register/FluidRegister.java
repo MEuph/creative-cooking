@@ -121,6 +121,42 @@ public class FluidRegister {
                     .noCollission().strength(100f).noDrops())
     );
 
+    public static final RegistryObject<FlowingFluid> LIME_JUICE_FLUID
+            = FLUIDS.register("lime_juice_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.LIME_JUICE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> LIME_JUICE_FLOWING
+            = FLUIDS.register("lime_juice_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.LIME_JUICE_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties LIME_JUICE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> LIME_JUICE_FLUID.get(), () -> LIME_JUICE_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xff82f400)).slopeFindDistance(2).levelDecreasePerBlock(3)
+            .block(() -> FluidRegister.LIME_JUICE_BLOCK.get()).bucket(() -> ItemRegister.LIME_JUICE_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> LIME_JUICE_BLOCK = BlockRegister.BLOCKS.register("lime_juice",
+            () -> new LiquidBlock(() -> FluidRegister.LIME_JUICE_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
+
+    public static final RegistryObject<FlowingFluid> LEMON_JUICE_FLUID
+            = FLUIDS.register("lemon_juice_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.LEMON_JUICE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> LEMON_JUICE_FLOWING
+            = FLUIDS.register("lemon_juice_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.LEMON_JUICE_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties LEMON_JUICE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> LEMON_JUICE_FLUID.get(), () -> LEMON_JUICE_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xfff4d600)).slopeFindDistance(2).levelDecreasePerBlock(3)
+            .block(() -> FluidRegister.LEMON_JUICE_BLOCK.get()).bucket(() -> ItemRegister.LEMON_JUICE_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> LEMON_JUICE_BLOCK = BlockRegister.BLOCKS.register("lemon_juice",
+            () -> new LiquidBlock(() -> FluidRegister.LEMON_JUICE_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
+
     public static final RegistryObject<FlowingFluid> STRAWBERRY_JAM_FLUID
             = FLUIDS.register("strawberry_jam_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.STRAWBERRY_JAM_PROPERTIES));
 
