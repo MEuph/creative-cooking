@@ -112,7 +112,7 @@ public class FluidRegister {
     public static final ForgeFlowingFluid.Properties MOZZARELLA_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> MOZZARELLA_FLUID.get(), () -> MOZZARELLA_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
             .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
-            .color(0xffffddf9)).slopeFindDistance(2).levelDecreasePerBlock(3)
+            .color(0xfff8f8e3)).slopeFindDistance(2).levelDecreasePerBlock(3)
             .block(() -> FluidRegister.MOZZARELLA_BLOCK.get()).bucket(() -> ItemRegister.MOZZARELLA_BUCKET.get()
             );
 
@@ -154,6 +154,24 @@ public class FluidRegister {
 
     public static final RegistryObject<LiquidBlock> PEANUT_OIL_BLOCK = BlockRegister.BLOCKS.register("peanut_oil_block",
             () -> new LiquidBlock(() -> FluidRegister.PEANUT_OIL_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops())
+    );
+
+    public static final RegistryObject<FlowingFluid> PEANUT_BUTTER_FLUID
+            = FLUIDS.register("peanut_butter_fluid", () -> new ForgeFlowingFluid.Source(FluidRegister.PEANUT_BUTTER_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> PEANUT_BUTTER_FLOWING
+            = FLUIDS.register("peanut_butter_flowing", () -> new ForgeFlowingFluid.Flowing(FluidRegister.PEANUT_BUTTER_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties PEANUT_BUTTER_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> PEANUT_BUTTER_FLUID.get(), () -> PEANUT_BUTTER_FLOWING.get(), FluidAttributes.builder(MILK_STILL_RL, MILK_FLOWING_RL)
+            .density(1024).viscosity(1024).sound(SoundEvents.BUCKET_EMPTY).overlay(WATER_OVERLAY_RL)
+            .color(0xff865a11)).slopeFindDistance(2).levelDecreasePerBlock(4).tickRate(2)
+            .block(() -> FluidRegister.PEANUT_BUTTER_BLOCK.get()).bucket(() -> ItemRegister.PEANUT_BUTTER_BUCKET.get()
+            );
+
+    public static final RegistryObject<LiquidBlock> PEANUT_BUTTER_BLOCK = BlockRegister.BLOCKS.register("peanut_butter_block",
+            () -> new LiquidBlock(() -> FluidRegister.PEANUT_BUTTER_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops())
     );
     

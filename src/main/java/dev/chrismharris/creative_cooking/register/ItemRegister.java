@@ -39,6 +39,8 @@ public class ItemRegister {
     public static final RegistryObject<Item> LIME_SEEDS = register("lime_seeds", LimeSeeds::new);
     public static final RegistryObject<Item> TOMATO_SEEDS = register("tomato_seeds", TomatoSeeds::new);
     public static final RegistryObject<Item> PEANUT = register("peanut", Peanut::new);
+    public static final RegistryObject<Item> PEANUT_BUTTER = register("peanut_butter", PeanutButter::new);
+    public static final RegistryObject<Item> ROASTED_PEANUTS = register("roasted_peanuts", RoastedPeanuts::new);
     public static final RegistryObject<Item> ONION = register("onion", Onion::new);
     public static final RegistryObject<Item> GARLIC = register("garlic", Garlic::new);
     public static final RegistryObject<Item> SHRIMP_SPAWN_EGG = ITEMS.register("shrimp_spawn_egg",
@@ -86,6 +88,10 @@ public class ItemRegister {
 
     public static final RegistryObject<BucketItem> PEANUT_OIL_BUCKET = register("peanut_oil_bucket",
             () -> new BucketItem(FluidRegister.PEANUT_OIL_FLUID,
+                    new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
+    );
+    public static final RegistryObject<BucketItem> PEANUT_BUTTER_BUCKET = register("peanut_butter_bucket",
+            () -> new BucketItem(FluidRegister.PEANUT_BUTTER_FLUID,
                     new Item.Properties().tab(CreativeCookingMod.CC_TAB).stacksTo(1).craftRemainder(Items.BUCKET))
     );
     
