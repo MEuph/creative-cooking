@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "creative_cooking:salt"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "creative_cooking:roasted_peanuts"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "creative_cooking:peanut_butter_fluid",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

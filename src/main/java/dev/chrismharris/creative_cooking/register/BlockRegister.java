@@ -2,6 +2,14 @@ package dev.chrismharris.creative_cooking.register;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.block.*;
+import dev.chrismharris.creative_cooking.block.bush.LemonBushBlock;
+import dev.chrismharris.creative_cooking.block.bush.LimeBushBlock;
+import dev.chrismharris.creative_cooking.block.bush.StrawberryBushBlock;
+import dev.chrismharris.creative_cooking.block.bush.TomatoBushBlock;
+import dev.chrismharris.creative_cooking.block.crop.CornCropBlock;
+import dev.chrismharris.creative_cooking.block.crop.GarlicCropBlock;
+import dev.chrismharris.creative_cooking.block.crop.OnionCropBlock;
+import dev.chrismharris.creative_cooking.block.crop.PeanutCropBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -30,23 +38,22 @@ public class BlockRegister {
             BreadPan::new,
             object -> () -> new BlockItem(object.get(), BreadPan.ITEM_PROPERTIES)
     );
-
-    public static final RegistryObject<Block> BREAD_PAN_RAW = register(
-            "bread_pan_raw",
-            BreadPanRaw::new,
-            object -> () -> new BlockItem(object.get(), BreadPanRaw.ITEM_PROPERTIES)
+    public static final RegistryObject<Block> COOKED_BREAD_PAN = register(
+            "cooked_bread_pan",
+            CookedBreadPan::new,
+            object -> () -> new BlockItem(object.get(), CookedBreadPan.ITEM_PROPERTIES)
     );
 
-    public static final RegistryObject<Block> BREAD_PAN_DIRTY = register(
-            "bread_pan_dirty",
-            BreadPanDirty::new,
-            object -> () -> new BlockItem(object.get(), BreadPanDirty.ITEM_PROPERTIES)
+    public static final RegistryObject<Block> BUTTER_BLOCK = register(
+            "butter_block",
+            ButterBlock::new,
+            object -> () -> new BlockItem(object.get(), ButterBlock.ITEM_PROPERTIES)
     );
 
-    public static final RegistryObject<Block> BREAD_PAN_DIRTY_FILLED = register(
-            "bread_pan_dirty_filled",
-            BreadPanDirtyFilled::new,
-            object -> () -> new BlockItem(object.get(), BreadPanDirtyFilled.ITEM_PROPERTIES)
+    public static final RegistryObject<Block> MOZZARELLA_BLOCK = register(
+            "mozzarella_block",
+            MozzarellaBlock::new,
+            object -> () -> new BlockItem(object.get(), MozzarellaBlock.ITEM_PROPERTIES)
     );
 
     public static final RegistryObject<Block> CORN_CROP = registerBlockWithoutBlockItem(

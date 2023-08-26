@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:beef"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:ground_beef",
+      "count": 4
+    }
+  ],
+  "processingTime": 50
+}

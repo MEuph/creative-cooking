@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "creative_cooking:garlic"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:minced_garlic",
+      "count": 3
+    }
+  ],
+  "processingTime": 50
+}

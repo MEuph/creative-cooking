@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "creative_cooking:cow_stomach"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:rennet",
+      "chance": 1.0
+    },
+    {
+      "item": "minecraft:leather",
+      "chance": 0.2
+    }
+  ],
+  "processingTime": 50
+}

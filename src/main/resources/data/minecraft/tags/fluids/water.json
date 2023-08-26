@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "creative_cooking:skim_milk_flowing",
+    "creative_cooking:skim_milk_fluid",
+    "creative_cooking:cream_flowing",
+    "creative_cooking:cream_fluid",
+    "creative_cooking:butter_flowing",
+    "creative_cooking:butter_fluid",
+    "creative_cooking:buttermilk_flowing",
+    "creative_cooking:buttermilk_fluid"
+  ]
+}

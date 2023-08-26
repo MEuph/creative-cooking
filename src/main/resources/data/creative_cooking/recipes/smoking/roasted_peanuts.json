@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "creative_cooking:peanut"
+  },
+  "result": "creative_cooking:roasted_peanuts",
+  "cookingTime": 25
+}

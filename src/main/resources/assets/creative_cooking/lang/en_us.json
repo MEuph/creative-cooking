@@ -1,41 +1,103 @@
 {
-  "item.creative_cooking.corn_seeds": "Corn Seeds",
+  "item.creative_cooking.corn_seeds": "Corn Kernels",
   "item.creative_cooking.corn_cob": "Corn",
   "block.creative_cooking.corn_crop": "Corn Crop",
+  "item.creative_cooking.corn_grits": "Corn Grits",
+  "item.creative_cooking.bowl_of_grits": "Bowl of Grits",
+  "item.creative_cooking.cornstarch": "Cornstarch",
+  "item.creative_cooking.rennet": "Rennet",
+  "item.creative_cooking.cow_stomach": "Cow Stomach",
+  "item.creative_cooking.salt": "Salt",
+
+  "item.creative_cooking.diced_chicken": "Diced Chicken",
+  "item.creative_cooking.sliced_chicken": "Sliced Chicken",
+  "item.creative_cooking.ground_beef": "Ground Beef",
+
+  "item.creative_cooking.skim_milk_bucket": "Skim Milk Bucket",
+  "item.creative_cooking.cream_bucket": "Cream Bucket",
+  "item.creative_cooking.butter_bucket": "Butter Bucket",
+  "item.creative_cooking.buttermilk_bucket": "Buttermilk Bucket",
+  "item.creative_cooking.mozzarella_bucket": "Mozzarella Bucket",
+
+  "item.creative_cooking.butter_stick": "Stick of Butter",
+  "block.creative_cooking.butter_block": "Block of Butter",
+
+  "item.creative_cooking.mozzarella_ball": "Ball of Mozzarella",
+  "block.creative_cooking.mozzarella_block": "Block of Mozzarella",
+
+  "fluid.creative_cooking.skim_milk_fluid": "Skim Milk",
+  "fluid.creative_cooking.cream_fluid": "Cream",
+  "fluid.creative_cooking.butter_fluid": "Butter",
+  "fluid.creative_cooking.buttermilk_fluid": "Buttermilk",
+  "fluid.creative_cooking.mozzarella_fluid": "Mozzarella",
 
   "item.creative_cooking.peanut": "Peanut",
   "item.creative_cooking.peanut_crop": "Peanut Crop",
+  "item.creative_cooking.peanut_oil": "Peanut Oil",
+  "item.creative_cooking.peanut_oil_bucket": "Bucket of Peanut Oil",
+  "fluid.creative_cooking.peanut_oil_fluid": "Peanut Oil",
+  "item.creative_cooking.peanut_butter": "Peanut Butter",
+  "item.creative_cooking.roasted_peanuts": "Roasted Peanuts",
+  "item.creative_cooking.peanut_butter_bucket": "Bucket of Peanut Butter",
+  "fluid.creative_cooking.peanut_butter_fluid": "Peanut Butter",
 
   "item.creative_cooking.garlic": "Garlic",
   "item.creative_cooking.garlic_crop": "Garlic Crop",
+  "item.creative_cooking.minced_garlic": "Minced Garlic",
 
   "item.creative_cooking.onion": "Onion",
   "item.creative_cooking.onion_crop": "Onion Crop",
+  "item.creative_cooking.diced_onion": "Diced Onion",
+
+  "item.creative_cooking.empty_jar": "Empty Jar",
 
   "item.creative_cooking.strawberry": "Strawberry",
   "block.creative_cooking.strawberry_bush": "Strawberry Bush",
+  "item.creative_cooking.strawberry_jam": "Strawberry Jam",
+  "item.creative_cooking.strawberry_jam_bucket": "Bucket of Strawberry Jam",
+  "fluid.creative_cooking.strawberry_jam_fluid": "Strawberry Jam",
 
   "item.creative_cooking.lemon": "Lemon",
   "item.creative_cooking.lemon_seeds": "Lemon Seeds",
   "item.creative_cooking.lemon_bush": "Lemon Bush",
+  "item.creative_cooking.lemon_juice": "Lemon Juice",
+  "fluid.creative_cooking.lemon_juice_fluid": "Lemon Juice",
+  "item.creative_cooking.lemon_juice_bucket": "Bucket of Lemon Juice",
 
   "item.creative_cooking.lime": "Lime",
   "item.creative_cooking.lime_seeds": "Lime Seeds",
   "item.creative_cooking.lime_bush": "Lime Bush",
+  "item.creative_cooking.lime_juice": "Lime Juice",
+  "fluid.creative_cooking.lime_juice_fluid": "Lime Juice",
+  "item.creative_cooking.lime_juice_bucket": "Bucket of Lime Juice",
 
   "item.creative_cooking.tomato": "Tomato",
   "item.creative_cooking.tomato_seeds": "Tomato Seeds",
   "item.creative_cooking.tomato_bush": "Tomato Bush",
+  "item.creative_cooking.tomato_sauce": "Tomato Sauce",
+  "fluid.creative_cooking.tomato_sauce_fluid": "Tomato Sauce",
+  "item.creative_cooking.tomato_sauce_bucket": "Bucket of Tomato Sauce",
 
-  "block.creative_cooking.bread_pan_dirty": "Bread Pan (Dirty)",
-  "block.creative_cooking.bread_pan_dirty_filled": "Bread Pan (Baked Bread)",
-  "block.creative_cooking.bread_pan_raw": "Bread Pan (Raw Dough)",
-  "block.creative_cooking.bread_pan": "Bread Pan (Empty)",
+  "block.creative_cooking.bread_pan": "Bread Pan",
+  "block.creative_cooking.cooked_bread_pan": "Bread Pan (Baked)",
+
+  "message.creative_cooking.cannot_fill_pan": "You must clean the pan first",
+
+  "item.creative_cooking.bread_pan_raw": "Bread Pan (Raw Dough)",
+  "item.creative_cooking.bread_pan_dirty": "Dirty Bread Pan",
+
+  "tooltip.creative_cooking.bread_pan_dirty.tooltip": "Wash the pan by mixing it with soap and water in a basin",
+  "tooltip.creative_cooking.bread_pan_raw.tooltip": "Bake the bread in the pan with a smoker or by bulk smoking",
 
   "block.creative_cooking.bread_loaf": "Loaf of Bread",
   "item.creative_cooking.bread_slice": "Slice of Bread",
 
   "item.creative_cooking.soap": "Soap",
+
+  "item.creative_cooking.shrimp_spawn_egg": "Shrimp Spawn Egg",
+  "entity.creative_cooking.shrimp_entity": "Shrimp",
+  "item.creative_cooking.raw_shrimp": "Raw Shrimp",
+  "item.creative_cooking.cooked_shrimp": "Cooked Shrimp",
 
   "itemGroup.creative_cooking": "Creative Cooking"
 }

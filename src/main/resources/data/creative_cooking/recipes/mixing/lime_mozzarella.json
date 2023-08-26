@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 250
+    },
+    {
+      "fluidTag": "forge:milk",
+      "amount": 750
+    },
+    {
+      "item": "creative_cooking:rennet",
+      "count": 1
+    },
+    {
+      "item": "creative_cooking:salt",
+      "count": 1
+    },
+    {
+      "item": "creative_cooking:lime",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "fluid": "creative_cooking:mozzarella_fluid",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement": "heated"
+}

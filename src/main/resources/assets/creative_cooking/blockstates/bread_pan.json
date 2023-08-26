@@ -1,8 +1,18 @@
 {
   "variants": {
-      "facing=north": { "model": "creative_cooking:block/bread_pan"},
-      "facing=east": { "model": "creative_cooking:block/bread_pan", "y": 90},
-      "facing=south": { "model": "creative_cooking:block/bread_pan"},
-      "facing=west": { "model": "creative_cooking:block/bread_pan", "y": 90 }
+      "filled=false,dirty=false,facing=north": { "model": "creative_cooking:block/bread_pan"},
+      "filled=false,dirty=false,facing=east": { "model": "creative_cooking:block/bread_pan", "y": 90},
+      "filled=false,dirty=false,facing=south": { "model": "creative_cooking:block/bread_pan"},
+      "filled=false,dirty=false,facing=west": { "model": "creative_cooking:block/bread_pan", "y": 90 },
+
+      "filled=false,dirty=true,facing=north": { "model": "creative_cooking:block/bread_pan_dirty"},
+      "filled=false,dirty=true,facing=east": { "model": "creative_cooking:block/bread_pan_dirty", "y": 90},
+      "filled=false,dirty=true,facing=south": { "model": "creative_cooking:block/bread_pan_dirty"},
+      "filled=false,dirty=true,facing=west": { "model": "creative_cooking:block/bread_pan_dirty", "y": 90 },
+
+      "filled=true,dirty=false,facing=north": { "model": "creative_cooking:block/bread_pan_raw"},
+      "filled=true,dirty=false,facing=east": { "model": "creative_cooking:block/bread_pan_raw", "y": 90},
+      "filled=true,dirty=false,facing=south": { "model": "creative_cooking:block/bread_pan_raw"},
+      "filled=true,dirty=false,facing=west": { "model": "creative_cooking:block/bread_pan_raw", "y": 90 }
   }
 }

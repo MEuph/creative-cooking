@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "creative_cooking:lime"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "creative_cooking:lime_juice_fluid",
+      "amount": 250
+    }
+  ]
+}

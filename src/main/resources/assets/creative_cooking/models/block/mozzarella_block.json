@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "creative_cooking:block/food/mozzarella_block"
+  }
+}

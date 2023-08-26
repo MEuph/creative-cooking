@@ -2,7 +2,8 @@ package dev.chrismharris.creative_cooking.datagen;
 
 import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.client.lang.ModEnUsProvider;
-import dev.chrismharris.creative_cooking.datagen.client.*;
+import dev.chrismharris.creative_cooking.datagen.client.ModBlockStateProvider;
+import dev.chrismharris.creative_cooking.datagen.client.ModItemModelProvider;
 import dev.chrismharris.creative_cooking.datagen.server.ModBlockTagsProvider;
 import dev.chrismharris.creative_cooking.datagen.server.ModItemTagsProvider;
 import dev.chrismharris.creative_cooking.datagen.server.ModRecipeProvider;
@@ -12,7 +13,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
-@Mod.EventBusSubscriber(modid= CreativeCookingMod.MOD_ID, bus= Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = CreativeCookingMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreativeCookingDataGeneration {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {

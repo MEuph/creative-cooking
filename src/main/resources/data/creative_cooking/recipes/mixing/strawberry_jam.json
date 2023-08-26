@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "creative_cooking:strawberry"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "creative_cooking:strawberry_jam_fluid",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

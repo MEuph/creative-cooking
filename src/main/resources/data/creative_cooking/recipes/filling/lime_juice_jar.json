@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "creative_cooking:empty_jar"
+    },
+    {
+      "fluid": "creative_cooking:lime_juice_fluid",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:lime_juice"
+    }
+  ]
+}

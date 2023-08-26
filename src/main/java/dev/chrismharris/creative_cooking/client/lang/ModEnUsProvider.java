@@ -5,6 +5,7 @@ import dev.chrismharris.creative_cooking.register.BlockRegister;
 import dev.chrismharris.creative_cooking.register.ItemRegister;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
+
 public class ModEnUsProvider extends LanguageProvider {
 
     public ModEnUsProvider(DataGenerator gen) {
@@ -25,9 +26,6 @@ public class ModEnUsProvider extends LanguageProvider {
         add(BlockRegister.CORN_CROP.get(), "Corn Crop");
         add(BlockRegister.BREAD_LOAF.get(), "Loaf of Bread");
         add(BlockRegister.BREAD_PAN.get(), "Bread Pan (Empty)");
-        add(BlockRegister.BREAD_PAN_DIRTY.get(), "Bread Pan (Dirty)");
-        add(BlockRegister.BREAD_PAN_DIRTY_FILLED.get(), "Bread Pan (Baked Bread)");
-        add(BlockRegister.BREAD_PAN_RAW.get(), "Bread Pan (Raw Dough)");
     }
 
 }

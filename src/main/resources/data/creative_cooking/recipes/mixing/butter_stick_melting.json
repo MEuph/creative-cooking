@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "creative_cooking:butter_stick"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "creative_cooking:butter_fluid",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

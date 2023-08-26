@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "creative_cooking:peanut"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "creative_cooking:peanut_oil_fluid",
+      "amount": 250
+    }
+  ]
+}

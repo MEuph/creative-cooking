@@ -1,4 +1,5 @@
 package dev.chrismharris.creative_cooking.datagen;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import net.minecraft.advancements.critereon.EnchantmentPredicate;
