@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "creative_cooking:bread_slice"
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:breadcrumbs",
+      "chance": 1.0
+    },
+    {
+      "item": "creative_cooking:breadcrumbs",
+      "chance": 0.1
+    }
+  ],
+  "processingTime": 50
+}

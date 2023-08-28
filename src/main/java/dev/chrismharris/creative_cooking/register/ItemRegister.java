@@ -117,6 +117,7 @@ public class ItemRegister {
     public static final RegistryObject<Item> DICED_ONION = register("diced_onion", DicedOnion::new);
     public static final RegistryObject<Item> MINCED_GARLIC = register("minced_garlic", MincedGarlic::new);
     public static final RegistryObject<Item> TOMATO_SAUCE = register("tomato_sauce", TomatoSauce::new);
+    public static final RegistryObject<Item> BREADCRUMBS = register("breadcrumbs", Breadcrumbs::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);
