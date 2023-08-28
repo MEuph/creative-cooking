@@ -4,6 +4,7 @@ import dev.chrismharris.creative_cooking.CreativeCookingMod;
 import dev.chrismharris.creative_cooking.item.food.*;
 import dev.chrismharris.creative_cooking.item.food.basic.*;
 import dev.chrismharris.creative_cooking.item.food.bush.*;;
+import dev.chrismharris.creative_cooking.item.food.meals.ShrimpAndGrits;
 import dev.chrismharris.creative_cooking.item.food.meat.*;
 import dev.chrismharris.creative_cooking.item.food.root_crop.*;
 import dev.chrismharris.creative_cooking.item.food.surface_crop.*;
@@ -118,6 +119,7 @@ public class ItemRegister {
     public static final RegistryObject<Item> MINCED_GARLIC = register("minced_garlic", MincedGarlic::new);
     public static final RegistryObject<Item> TOMATO_SAUCE = register("tomato_sauce", TomatoSauce::new);
     public static final RegistryObject<Item> BREADCRUMBS = register("breadcrumbs", Breadcrumbs::new);
+    public static final RegistryObject<Item> SHRIMP_AND_GRITS = register("shrimp_and_grits", ShrimpAndGrits::new);
 
     static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

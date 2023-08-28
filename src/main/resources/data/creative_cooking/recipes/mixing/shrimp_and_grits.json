@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "creative_cooking:corn_grits"
+    },
+    {
+      "item": "creative_cooking:raw_shrimp"
+    },
+    {
+      "item": "creative_cooking:diced_onion"
+    },
+    {
+      "item": "creative_cooking:minced_garlic"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "fluidTag": "forge:milk",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "creative_cooking:shrimp_and_grits",
+      "count": 1
+    }
+  ],
+  "heatRequirement": "heated"
+}
